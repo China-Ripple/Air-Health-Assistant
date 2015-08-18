@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1AF580BD-84AB-4CE1-BEB6-AE41166FFB6A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Air Health Assistant</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
+		<string>svn://localhost/code</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Air_Health_Assistant/Air Health Assistant.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
+		<string>svn://localhost</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://localhost/code/Air_Health_Assistant/Air%20Health%20Assistant.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</string>
+			<key>IDESourceControlWCCName</key>
+			<string>project</string>
+		</dict>
+	</array>
+</dict>
+</plist>

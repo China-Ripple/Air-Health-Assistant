@@ -1,0 +1,103 @@
+/* 
+  Localization.strings
+  Air Health Assistant
+
+  Created by xu da on 14-6-9.
+  Copyright (c) 2014年 xu da. All rights reserved.
+*/
+"WEATHER_CITY" = "城市";
+"WEATHER_TEMP" = "温度";
+"WEATHER_WD" = "风向";
+"WEATHER_WS" = "风力";
+"WEATHER_SD" = "湿度";
+"WEATHER_CITYID" = "cityid";
+"WEATHER_IMG1" = "img1";
+"WEATHER_IMG2" = "img2";
+"WEATHER_TEMP1" = "最高";
+"WEATHER_TEMP2" = "最低";
+"WEATHER_WEATHER" = "天气";
+"TEXT_NO_DATA" = "未知";
+"TEXT_LOGIN" = "登录";
+"T_CANCEL" = "取消";
+"T_OK" = "确定";
+"SETTING_VIEW_TITLE" = "设置";
+"T_SEARCHING" = "查找中...";
+"T_DATA_ERROR" = "数据错误";
+"T_NO_DATA" = "暂无数据";
+"T_WAITING" = "等待中...";
+"T_LEVEL1" = "优";
+"T_LEVEL2" = "良";
+"T_LEVEL3" = "轻度污染";
+"T_LEVEL4" = "中度污染";
+"T_LEVEL5" = "重度污染";
+"T_LEVEL6" = "严重污染";
+"T_DISCONNECTED" = "未连接";
+"T_CONNECTING" = "连接中...";
+"T_CONNECTED" = "已连接";
+//"T_DEVICE" = "device：";
+"T_DEVICE" = "";
+//"T_CURRENT_CITY" = "当前城市：";
+"T_CURRENT_CITY" = "";
+"PAGE_MAIN" = "主页";
+"PAGE_HEALTH_TEST" = "健康检测";
+"PAGE_HEALTH_EXERCISE" = "健康锻炼";
+"PAGE_ACCOUNT" = "个人信息";
+"PAGE_ONLINE_STORE" = "网络商城";
+"PAGE_PM25_DETAIL" = "PM2.5详细";
+"PAGE_WEATHER_DETAIL" = "天气详细";
+"PAGE_DEVICE" = "我的空气净化器";
+"PAGE_CITY_SELECT" = "城市选择";
+"PAGE_INFORMATION" = "信息";
+"PAGE_DUST_DETAIL" = "烟气检测";
+"PAGE_REGISTER" = "注册";
+"PAGE_TEST1" = "自测身体是否健康";
+"PAGE_TEST2" = "健康问医生";
+"PAGE_TEST3" = "从指甲看健康";
+"PAGE_EXERCISE1" = "瑜伽呼吸法－胸式呼吸法";
+"PAGE_EXERCISE2" = "瑜伽呼吸法－完全呼吸法";
+"PAGE_EXERCISE3" = "瑜伽呼吸减肥操";
+"PAGE_EXERCISE4" = "瑜伽呼吸减肥法 专瘦腹部";
+"PAGE_EXERCISE5" = "能量治疗";
+"TITLE_PROGRAM_VERSION" = "程序版本";
+"TITLE_POWER_STATE" = "开关状态";
+"TITLE_FAN_SATE" = "风速";
+"TITLE_ANION_STATE" = "负离子状态";
+"TITLE_TOTAL_RUNTIME" = "运行时间";
+"TITLE_VOLTAGE" = "传感器电压";
+"TITLE_DUST" = "烟气监测";
+"TITLE_CONNECTION_STATE" = "连接状态";
+"DUST_LEVEL1" = "空气清洁";
+"DUST_LEVEL2" = "轻度污染";
+"DUST_LEVEL3" = "中度污染";
+"DUST_LEVEL4" = "重度污染";
+"TEXT_POWER_ON" = "电源开";
+"TEXT_POWER_OFF" = "电源关";
+"TEXT_AIR_MOTOR_0" = "风扇关";
+"TEXT_AIR_MOTOR_1" = "风扇1";
+"TEXT_AIR_MOTOR_2" = "风扇2";
+"TEXT_AIR_MOTOR_3" = "风扇3";
+"TEXT_ANION_ON" = "负离子开";
+"TEXT_ANION_OFF" = "负离子关";
+"T_ANALYZATION" = "环境建议";
+"T_AIR_QUALITY" = "空气质量:";
+
+/**
+ *@zhongqihong
+ **/
+"SETTING_GUIDE" = "请在设置->隐私->定位服务 中允许开启本应用的定位功能";
+"SETTING_AUTO_CONN" = "自动连接：";
+"PAGE_HEALTH_CONSULTANT" = "健康顾问";
+"WEATHER_TITLE" = "天气";
+"PAGE_TEMP_MAX" = "最高温度";
+"PAGE_TEMP_MIN" = "最低温度";
+"WIND_DIRECTION" = "风向";
+"WIND_POWER" ="风力";
+"WIND_SPEED" = "风速";
+"WEATHER_HUMIDITY" ="湿度";
+"SUGGESTION" ="天气情况建议";
+/****/
+
+
+
+
+

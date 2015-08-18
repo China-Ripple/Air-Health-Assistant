@@ -1,0 +1,100 @@
+/* 
+  Localization.strings
+  Air Health Assistant
+
+  Created by xu da on 14-6-9.
+  Copyright (c) 2014年 xu da. All rights reserved.
+*/
+
+"WEATHER_CITY" = "city";
+"WEATHER_TEMP" = "temp";
+"WEATHER_WD" = "WD";
+"WEATHER_WS" = "WS";
+"WEATHER_SD" = "SD";
+"WEATHER_CITYID" = "cityid";
+"WEATHER_IMG1" = "img1";
+"WEATHER_IMG2" = "img2";
+"WEATHER_TEMP1" = "high";
+"WEATHER_TEMP2" = "low";
+"WEATHER_WEATHER" = "weather";
+"TEXT_NO_DATA" = "unknown";
+"TEXT_LOGIN" = "login";
+"T_CANCEL" = "cancel";
+"T_OK" = "ok";
+"SETTING_VIEW_TITLE" = "setting";
+"T_SEARCHING" = "searching...";
+"T_DATA_ERROR" = "data error";
+"T_NO_DATA" = "no data";
+"T_WAITING" = "等待中...";
+"T_LEVEL1" = "优";
+"T_LEVEL2" = "良";
+"T_LEVEL3" = "轻度污染";
+"T_LEVEL4" = "中度污染";
+"T_LEVEL5" = "重度污染";
+"T_LEVEL6" = "严重污染";
+"T_DISCONNECTED" = "disconnected";
+"T_CONNECTING" = "connecting...";
+"T_CONNECTED" = "connected";
+//"T_DEVICE" = "device：";
+"T_DEVICE" = "";
+//"T_CURRENT_CITY" = "当前城市：";
+"T_CURRENT_CITY" = "";
+"PAGE_MAIN" = "Main";
+"PAGE_HEALTH_TEST" = "Health Test";
+"PAGE_HEALTH_EXERCISE" = "Health Exercise";
+"PAGE_ACCOUNT" = "个人信息";
+"PAGE_ONLINE_STORE" = "Online Store";
+"PAGE_PM25_DETAIL" = "PM2.5详细";
+"PAGE_WEATHER_DETAIL" = "Weather Detail";
+"PAGE_DEVICE" = "我的空气净化器";
+"PAGE_CITY_SELECT" = "城市选择";
+"PAGE_INFORMATION" = "信息";
+"PAGE_DUST_DETAIL" = "烟气检测";
+"PAGE_REGISTER" = "注册";
+"PAGE_TEST1" = "Self Examination";
+"PAGE_TEST2" = "Consultant";
+"PAGE_TEST3" = "Nail Test";
+"PAGE_EXERCISE1" = "Yoga Breathe-chest";
+"PAGE_EXERCISE2" = "Yoga Breathe-complete";
+"PAGE_EXERCISE3" = "Yoga Breathe-lost weight";
+"PAGE_EXERCISE4" = "Yoga Breathe-belly";
+"PAGE_EXERCISE5" = "Power treat";
+"TITLE_PROGRAM_VERSION" = "Version";
+"TITLE_POWER_STATE" = "Power State";
+"TITLE_FAN_SATE" = "Fan Speed";
+"TITLE_ANION_STATE" = "Anion State";
+"TITLE_TOTAL_RUNTIME" = "Duration";
+"TITLE_VOLTAGE" = "Voltage";
+"TITLE_DUST" = "Dust";
+"TITLE_CONNECTION_STATE" = "Connection State";
+"DUST_LEVEL1" = "Air Clean";
+"DUST_LEVEL2" = "Soft Pollution";
+"DUST_LEVEL3" = "Medium Pollution";
+"DUST_LEVEL4" = "Hard Polllution";
+"TEXT_POWER_ON" = "Power On";
+"TEXT_POWER_OFF" = "Power Off";
+"TEXT_AIR_MOTOR_0" = "Mottor Off";
+"TEXT_AIR_MOTOR_1" = "MOTTOR1";
+"TEXT_AIR_MOTOR_2" = "MOTTOR2";
+"TEXT_AIR_MOTOR_3" = "MOTTOR3";
+"TEXT_ANION_ON" = "Anion On";
+"TEXT_ANION_OFF" = "Anion Off";
+"T_ANALYZATION" = "Analization";
+"T_AIR_QUALITY" = "Air Quality:";
+/**
+ *@zhongqihong
+ **/
+"SETTING_GUIDE" = "Setting->Pravicy->Location";
+"SETTING_AUTO_CONN" = "Auto Connection:";
+"PAGE_HEALTH_CONSULTANT" = "Health Consultant";
+"WEATHER_TITLE" = "Weather";
+"PAGE_TEMP_MAX" = "Degrees To";
+"PAGE_TEMP_MIN" = "Degrees From";
+"WIND_DIRECTION" = "Wind Direction";
+"WIND_POWER" ="Wind Pressure";
+"WIND_SPEED" = "Wind Speed";
+"WEATHER_HUMIDITY" ="Humidity";
+"SUGGESTION" ="Suggestion";
+/****/
+
+
