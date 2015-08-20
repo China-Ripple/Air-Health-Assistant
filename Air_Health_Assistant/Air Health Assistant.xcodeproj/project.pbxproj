@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A57C28B1B85B4C70003E1C8 /* MainTabView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */; };
 		8A6335271B6A746000BBA939 /* CitySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6335251B6A746000BBA939 /* CitySearchController.m */; };
 		8A6335281B6A746000BBA939 /* CitySearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6335261B6A746000BBA939 /* CitySearchController.xib */; };
 		8A63352E1B6A7F6A00BBA939 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A63352D1B6A7F6A00BBA939 /* MyTableViewController.m */; };
 		8A6335311B6A7F9900BBA939 /* MyResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6335301B6A7F9900BBA939 /* MyResultsViewController.m */; };
 		8A8C033C1B79E6740098078A /* MyTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8C033B1B79E6740098078A /* MyTableViewController.xib */; };
-		8AC46A4F1B830EDC0025D25A /* MainTabView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC46A4E1B830EDC0025D25A /* MainTabView_iPhone.xib */; };
 		990A6C41192EE2100016F32C /* pm25_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 990A6C39192EE2100016F32C /* pm25_bad.png */; };
 		990A6C42192EE2100016F32C /* pm25_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 990A6C3A192EE2100016F32C /* pm25_good.png */; };
 		990A6C56192F2BD60016F32C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 990A6C4B192F2BD60016F32C /* NSObject+SBJSON.m */; };
@@ -331,6 +331,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPhone.xib; sourceTree = "<group>"; };
 		8A6335241B6A746000BBA939 /* CitySearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchController.h; sourceTree = "<group>"; };
 		8A6335251B6A746000BBA939 /* CitySearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchController.m; sourceTree = "<group>"; };
 		8A6335261B6A746000BBA939 /* CitySearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySearchController.xib; sourceTree = "<group>"; };
@@ -339,7 +340,6 @@
 		8A63352F1B6A7F9900BBA939 /* MyResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyResultsViewController.h; sourceTree = "<group>"; };
 		8A6335301B6A7F9900BBA939 /* MyResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyResultsViewController.m; sourceTree = "<group>"; };
 		8A8C033B1B79E6740098078A /* MyTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewController.xib; sourceTree = "<group>"; };
-		8AC46A4E1B830EDC0025D25A /* MainTabView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPhone.xib; sourceTree = "<group>"; };
 		990A6C39192EE2100016F32C /* pm25_bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pm25_bad.png; path = "Air Health Assistant/images/pm25_bad.png"; sourceTree = "<group>"; };
 		990A6C3A192EE2100016F32C /* pm25_good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pm25_good.png; path = "Air Health Assistant/images/pm25_good.png"; sourceTree = "<group>"; };
 		990A6C49192F2BD60016F32C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -832,7 +832,7 @@
 		99B334BA1926060A00FD802E /* main */ = {
 			isa = PBXGroup;
 			children = (
-				8AC46A4E1B830EDC0025D25A /* MainTabView_iPhone.xib */,
+				8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */,
 				8A8C033B1B79E6740098078A /* MyTableViewController.xib */,
 				8A63352F1B6A7F9900BBA939 /* MyResultsViewController.h */,
 				8A6335301B6A7F9900BBA939 /* MyResultsViewController.m */,
@@ -1520,7 +1520,7 @@
 				99F2AC7C19A43E740082CF8C /* inf_icon.png in Resources */,
 				999F43BB19AAE8FA0069851C /* backTitle_iphone5_mask.png in Resources */,
 				99F6BD3E197CFB2300BFB3D7 /* healthConsultant.plist in Resources */,
-				8AC46A4F1B830EDC0025D25A /* MainTabView_iPhone.xib in Resources */,
+				8A57C28B1B85B4C70003E1C8 /* MainTabView_iPhone.xib in Resources */,
 				99F6BA5A1978AE7A00BFB3D7 /* face11.jpg in Resources */,
 				999F43D019AC8A670069851C /* PMInformationView_iphone5.xib in Resources */,
 				99F2AC7119A429FB0082CF8C /* pm25_level4.png in Resources */,
