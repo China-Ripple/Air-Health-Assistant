@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A23873B1B8ACCDA009B2611 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A23873A1B8ACCDA009B2611 /* SystemConfiguration.framework */; };
+		8A23873E1B8ACF09009B2611 /* JPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23873D1B8ACF09009B2611 /* JPNetwork.m */; };
 		8A57C28B1B85B4C70003E1C8 /* MainTabView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */; };
+		8A57C28D1B85C1E40003E1C8 /* MainTabView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */; };
 		8A6335271B6A746000BBA939 /* CitySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6335251B6A746000BBA939 /* CitySearchController.m */; };
 		8A6335281B6A746000BBA939 /* CitySearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6335261B6A746000BBA939 /* CitySearchController.xib */; };
 		8A63352E1B6A7F6A00BBA939 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A63352D1B6A7F6A00BBA939 /* MyTableViewController.m */; };
@@ -114,7 +117,6 @@
 		99B45A2019162B9800B58D54 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B45A1E19162B9800B58D54 /* MainViewController.m */; };
 		99B45A2519162C3C00B58D54 /* AirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B45A2319162C3C00B58D54 /* AirViewController.m */; };
 		99B45A2619162C3C00B58D54 /* AirView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B45A2419162C3C00B58D54 /* AirView_iPad.xib */; };
-		99B45A2A19163EA300B58D54 /* MainTabView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B45A2919163EA300B58D54 /* MainTabView_iPad.xib */; };
 		99B45A2C19163EDF00B58D54 /* AirView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B45A2B19163EDF00B58D54 /* AirView_iPhone.xib */; };
 		99B45A3119163FAB00B58D54 /* WeatherView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B45A2F19163FAB00B58D54 /* WeatherView_iPad.xib */; };
 		99B45A3319163FD800B58D54 /* WeatherView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B45A3219163FD800B58D54 /* WeatherView_iPhone.xib */; };
@@ -331,7 +333,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A23873A1B8ACCDA009B2611 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8A23873C1B8ACF09009B2611 /* JPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNetwork.h; sourceTree = "<group>"; };
+		8A23873D1B8ACF09009B2611 /* JPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNetwork.m; sourceTree = "<group>"; };
 		8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPhone.xib; sourceTree = "<group>"; };
+		8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPad.xib; sourceTree = "<group>"; };
 		8A6335241B6A746000BBA939 /* CitySearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchController.h; sourceTree = "<group>"; };
 		8A6335251B6A746000BBA939 /* CitySearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchController.m; sourceTree = "<group>"; };
 		8A6335261B6A746000BBA939 /* CitySearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySearchController.xib; sourceTree = "<group>"; };
@@ -472,7 +478,6 @@
 		99B45A2219162C3C00B58D54 /* AirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirViewController.h; sourceTree = "<group>"; };
 		99B45A2319162C3C00B58D54 /* AirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirViewController.m; sourceTree = "<group>"; };
 		99B45A2419162C3C00B58D54 /* AirView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirView_iPad.xib; sourceTree = "<group>"; };
-		99B45A2919163EA300B58D54 /* MainTabView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPad.xib; sourceTree = "<group>"; };
 		99B45A2B19163EDF00B58D54 /* AirView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirView_iPhone.xib; sourceTree = "<group>"; };
 		99B45A2F19163FAB00B58D54 /* WeatherView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherView_iPad.xib; sourceTree = "<group>"; };
 		99B45A3219163FD800B58D54 /* WeatherView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherView_iPhone.xib; sourceTree = "<group>"; };
@@ -704,6 +709,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A23873B1B8ACCDA009B2611 /* SystemConfiguration.framework in Frameworks */,
 				9917EBA31963907800FAB7B1 /* CoreBluetooth.framework in Frameworks */,
 				9917EB4C1957D19400FAB7B1 /* CoreLocation.framework in Frameworks */,
 				99B459EC191628B200B58D54 /* CoreGraphics.framework in Frameworks */,
@@ -758,6 +764,8 @@
 		999B4DF1191A0134003B9B02 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				8A23873C1B8ACF09009B2611 /* JPNetwork.h */,
+				8A23873D1B8ACF09009B2611 /* JPNetwork.m */,
 				9917EBA71963DE7700FAB7B1 /* LE */,
 				99BCA20C1945442F00208745 /* XBody.h */,
 				99BCA20D1945442F00208745 /* XBody.m */,
@@ -832,6 +840,7 @@
 		99B334BA1926060A00FD802E /* main */ = {
 			isa = PBXGroup;
 			children = (
+				8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */,
 				8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */,
 				8A8C033B1B79E6740098078A /* MyTableViewController.xib */,
 				8A63352F1B6A7F9900BBA939 /* MyResultsViewController.h */,
@@ -842,7 +851,6 @@
 				990D15EA19275CB1007D9490 /* MainTabViewController.m */,
 				99B45A1D19162B9800B58D54 /* MainViewController.h */,
 				99B45A1E19162B9800B58D54 /* MainViewController.m */,
-				99B45A2919163EA300B58D54 /* MainTabView_iPad.xib */,
 				990D15E419275A29007D9490 /* PMInformationViewController.h */,
 				990D15E519275A29007D9490 /* PMInformationViewController.m */,
 				990D15E619275A29007D9490 /* PMInformationView.xib */,
@@ -930,6 +938,7 @@
 		99B459E8191628B200B58D54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A23873A1B8ACCDA009B2611 /* SystemConfiguration.framework */,
 				9917EBA21963907800FAB7B1 /* CoreBluetooth.framework */,
 				9917EB4B1957D19400FAB7B1 /* CoreLocation.framework */,
 				99B459E9191628B200B58D54 /* Foundation.framework */,
@@ -1477,7 +1486,6 @@
 				99F2AC7319A429FB0082CF8C /* pm25_level6.png in Resources */,
 				99F6BCD11978AEFA00BFB3D7 /* weather_n_23.png in Resources */,
 				99F6BA591978AE7A00BFB3D7 /* face10.jpg in Resources */,
-				99B45A2A19163EA300B58D54 /* MainTabView_iPad.xib in Resources */,
 				99F6BA761978AEAA00BFB3D7 /* C2.png in Resources */,
 				99F6BCA11978AEFA00BFB3D7 /* weather_d_07.png in Resources */,
 				99F2AC7B19A43E740082CF8C /* inf_detail_frame.png in Resources */,
@@ -1594,6 +1602,7 @@
 				999F43DF19AD701C0069851C /* InformationViewController_ipad.xib in Resources */,
 				999F43C119AB033F0069851C /* cell_highlighted.png in Resources */,
 				99F6BCD71978AEFA00BFB3D7 /* weather_n_29.png in Resources */,
+				8A57C28D1B85C1E40003E1C8 /* MainTabView_iPad.xib in Resources */,
 				99F6BA571978AE7A00BFB3D7 /* face8.jpg in Resources */,
 				99F6BCA21978AEFA00BFB3D7 /* weather_d_08.png in Resources */,
 				99F6BCAD1978AEFA00BFB3D7 /* weather_d_19.png in Resources */,
@@ -1716,6 +1725,7 @@
 				99F6BD3A197A6F0500BFB3D7 /* TestTableViewCell.m in Sources */,
 				99F2AC2F199329D80082CF8C /* BleDevice.m in Sources */,
 				99B459F6191628B200B58D54 /* main.m in Sources */,
+				8A23873E1B8ACF09009B2611 /* JPNetwork.m in Sources */,
 				8A63352E1B6A7F6A00BBA939 /* MyTableViewController.m in Sources */,
 				9917EB471952B50400FAB7B1 /* HttpConnectionLogic.m in Sources */,
 				990D15F9192C561A007D9490 /* CityViewController.m in Sources */,
@@ -1790,8 +1800,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Rongtai Fitness Development Co., Ltd. (7V84BGCR9B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Rongtai Fitness Development Co., Ltd. (7V84BGCR9B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: qi lin (N57A2UML24)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qi lin (N57A2UML24)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1809,7 +1819,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1832,7 +1842,7 @@
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1900,7 +1910,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1935,7 +1945,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1959,7 +1969,7 @@
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1982,7 +1992,7 @@
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0f1157e0-febc-4edb-a2f8-64ebe71fa022";
+				PROVISIONING_PROFILE = "43343cdc-19c5-4904-8096-6570e07d04c5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

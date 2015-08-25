@@ -10,6 +10,8 @@
 #import "MyResultsViewController.h"
 #import "HttpConnectionLogic.h"
 #import "MMLocationManager.h"
+#import "JPNetwork.h"
+
 
 @interface MyTableViewController ()
 @property (nonatomic, strong) NSMutableArray  *dataArray;
@@ -18,6 +20,9 @@
 @property (strong,nonatomic) NSMutableArray  *searchList;
 @property (nonatomic,strong) NSString * locatedCityName;
 @property (nonatomic,strong) NSString * locatedCityWoeid;
+@property (nonatomic, retain) UISearchBar*mSearchBar;
+@property (nonatomic,retain)XBody *xbody ;
+@property BOOL isActive;
 @end
 
 
@@ -38,6 +43,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _isActive = false;
     
     if(alter ==nil ){
          alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"正在搜索城市，请稍后" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil];
@@ -66,27 +73,51 @@
    
     //导航栏字体颜色，back按钮的颜色
     //[self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-
-   
-  
+    //初始化搜索条
+    self.xbody = [XBody getInstance];
+    if( self.xbody .currentDeviceType == XDeviceTypeIPad) {
+        self.mSearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(20, 5, 295, 30)];
+        self.mSearchBar.searchBarStyle = UISearchBarStyleDefault;
+        self.mSearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
+        self.mSearchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
+        self.mSearchBar.placeholder = @"搜索城市";
+        self.mSearchBar.delegate = self;
+        self.mSearchBar.showsCancelButton = false;
+        self.mSearchBar.keyboardType=UIKeyboardTypePhonePad;
+        [self.tableView beginUpdates];
+        
+        [self.tableView setTableHeaderView:self.mSearchBar];
+        
+        [self.tableView endUpdates];
+    }
+    else{
+        
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+        
+        _searchController.searchBar.delegate = self;
+        
+        _searchController.searchResultsUpdater = self;
+        
+        _searchController.dimsBackgroundDuringPresentation = NO;
+        
+        
+        _searchController.hidesNavigationBarDuringPresentation = NO;
+        
+        [_searchController.searchBar sizeToFit];
+        
+        _searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
+        
+        [self.tableView beginUpdates];
+        
+        [self.tableView setTableHeaderView:_searchController.searchBar];
+        
+        [self.tableView endUpdates];
+    }
+ 
     
-    _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    
-  
-    _searchController.searchBar.delegate = self;
-    
-    _searchController.searchResultsUpdater = self;
-    
-    _searchController.dimsBackgroundDuringPresentation = NO;
     
     
-    _searchController.hidesNavigationBarDuringPresentation = NO;
-    
-    _searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
-    
-    
-    
-    self.tableView.tableHeaderView = self.searchController.searchBar;
+    //self.tableView.tableHeaderView = self.searchController.searchBar;
    // self.definesPresentationContext = YES;
     //============Location =========
     
@@ -114,11 +145,20 @@
     
     
     //==============================
-}
+    
+   }
 
 
 -(void) viewWillAppear:(BOOL)animated{
-    [self startLocation];
+   
+    BOOL reachability = [JPNetwork connectedToNetwork ];
+    
+    if(reachability == false){
+        [JPNetwork networkBreak ];
+    }
+    else {
+       [self startLocation]; 
+    }
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     
     
@@ -137,7 +177,7 @@
     UIImage *image = [UIImage imageNamed:@"backTitle_iphone5_mask"];
     UIImage *stretchedImage = [image stretchableImageWithLeftCapWidth:10 topCapHeight:5];
     [self.navigationController.navigationBar setBackgroundImage:stretchedImage forBarMetrics:UIBarMetricsDefault];
-     [self.searchController setActive:false ];
+    [self setUnActive];
     
     if(self.locationMgr != nil){
         [self.locationMgr stopUpdatingLocation];
@@ -188,8 +228,11 @@
           
             self.locationMgr.distanceFilter=10;
             
+            if([self.locationMgr respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+                 [self.locationMgr requestAlwaysAuthorization];
+            }
             
-            [self.locationMgr requestAlwaysAuthorization];
+           
           
         }
       
@@ -281,8 +324,15 @@
 
 
 #pragma mark - Table view data source
+
+-(void)searchDisplayController:(UISearchDisplayController *)controller willShowSearchResultsTableView:(UITableView *)tableView
+{
+    [self.tableView setContentInset:UIEdgeInsetsZero];
+    [self.tableView setScrollIndicatorInsets:UIEdgeInsetsZero];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (self.searchController.active) {
+    if ([self isSearchBarActive]) {
         
         if(section == 0){
             return 1;
@@ -298,7 +348,7 @@
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    if (self.searchController.active) {
+    if ([self isSearchBarActive]) {
         if(section == 0){
             return @"定位的城市";
         }
@@ -310,7 +360,6 @@
         return @"定位城市";
     }
     
-    
 }
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -319,7 +368,7 @@
     return indexPath;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (self.searchController.active) {
+    if ([self isSearchBarActive]) {
         return 2;
     }
     else{
@@ -331,7 +380,7 @@
 - (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    if (self.searchController.active) {
+    if ([self isSearchBarActive]) {
         
         if(indexPath.section == 1){
             NSMutableDictionary * city = [body.cities objectAtIndex:indexPath.row];
@@ -360,12 +409,11 @@
             
             
             [cityDelegate cityChanged];
-            
-            
-            
-            NSLog(@"selected located city: %@",[self.dataArray objectAtIndex:0]);
+
         }
-         [self.searchController setActive:false];
+        // [self.searchController setActive:false];
+        
+       [self setUnActive];
        
 
     }
@@ -382,16 +430,6 @@
         
         //[self.searchController.searchBar setShowsCancelButton:YES animated:YES];
     }
-    //[self.searchDisplayController setActive:NO animated:YES ];
-    
-   // [self.searchController.searchBar setShowsCancelButton:NO animated:YES];
-   // [self.searchController.searchBar  resignFirstResponder];
-    
-   // [self.searchDisplayController setActive:NO animated:YES];
-    
-   // [self.searchController.searchBar setHidden:true];
-    
-  //  [ self.tableView.tableHeaderView removeFromSuperview];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
     
@@ -416,7 +454,7 @@
     
     // Configure the cell...
     
-    if (self.searchController.active) {
+    if ([self isSearchBarActive]) {
         
         if(indexPath.section ==0){
             [cell.textLabel setText:self.dataArray[0]];
@@ -453,6 +491,10 @@
 -(void) update{
     NSLog(@"UPDATE CITY");
     
+    if(self.searchList == nil){
+        self.searchList= [[NSMutableArray alloc] init];
+    }
+    
    
     if(body.cities != nil && body.cities.count >0){
         
@@ -471,8 +513,13 @@
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
     NSLog(@"搜索Begin");
+    
+    
+    
+  
     return YES;
 }
+
 
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
     
@@ -501,5 +548,88 @@
     
     return YES;
 }
+
+
+
+-(BOOL)isSearchBarActive{
+    
+   
+    if( self.xbody .currentDeviceType != XDeviceTypeIPad) {
+         return self.searchController.active;
+    }
+    else{
+        return _isActive;
+    }
+//    if(self.searchController != nil){
+//        return self.searchController.active;
+//    }
+//    else if(self.mSearchBar != nil){
+//        if(self.searchList != nil && [self.searchList count] >0){
+//            return true;
+//        }
+//    }
+//    return false;
+   
+}
+-(void)setActive:(BOOL)active{
+    if( self.xbody .currentDeviceType != XDeviceTypeIPad){
+        [self.searchController setActive: active];
+    }
+    else {
+        [self.searchList removeAllObjects];
+        _isActive = active;
+    }
+    [self.tableView reloadData];
+    
+}
+//添加搜索框事件：
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
+    [searchBar setShowsCancelButton:YES animated:YES];
+    [self setActive:true];
+    NSLog(@"searchBarTextDidBeginEditing");
+}
+//添加Cancel事件：
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar   //called when cancel button pressed
+{
+    NSLog(@"searchBarCancelButtonClicked");
+    searchBar.text=@"";
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [self setUnActive];
+    [searchBar resignFirstResponder];
+}
+
+-(void)setUnActive{
+    [self setActive:false];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar    // called when keyboard search button pressed
+{
+    
+        NSString *text = [self.mSearchBar text];
+    
+        if(text ==nil || [text isEqual:@""]){
+            NSLog(@"搜索End empty");
+    
+            return  ;
+        }
+    
+        [alter show];
+    
+    
+        HttpConnectionLogic *httpConnectionLogic = [HttpConnectionLogic getInstance];
+    
+    
+        [httpConnectionLogic getCitys: text];
+    
+        NSLog(@"搜索End %@",text);
+    
+        [searchBar resignFirstResponder];
+        [self setActive:true];
+        [searchBar setShowsCancelButton:NO animated:YES];
+        [searchBar resignFirstResponder];
+    
+    
+}
+
 
 @end

@@ -25,4 +25,6 @@
 
    @property UIAlertView *alter;
 
+   
+
 @end

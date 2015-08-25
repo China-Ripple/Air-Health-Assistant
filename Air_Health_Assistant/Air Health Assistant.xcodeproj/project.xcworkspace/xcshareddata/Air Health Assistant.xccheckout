@@ -10,8 +10,6 @@
 	<string>Air Health Assistant</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
-		<string>svn://localhost/code</string>
 		<key>A5377D826B8C8850A1940839A63829687206A88E</key>
 		<string>https://github.com/China-Ripple/Air-Health-Assistant.git</string>
 	</dict>
@@ -19,15 +17,8 @@
 	<string>Air_Health_Assistant/Air Health Assistant.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
-		<string>../../../../project</string>
 		<key>A5377D826B8C8850A1940839A63829687206A88E</key>
 		<string>../../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</key>
-		<string>svn://localhost</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/China-Ripple/Air-Health-Assistant.git</string>
@@ -44,14 +35,6 @@
 			<string>A5377D826B8C8850A1940839A63829687206A88E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Air-Health-Assistant</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5aaddaae-2c4a-4984-8e0c-49580c8dedc9++3727</string>
-			<key>IDESourceControlWCCName</key>
-			<string>project</string>
 		</dict>
 	</array>
 </dict>
