@@ -234,9 +234,11 @@ NSURLConnection *pm25Connection;
         [pm25Button setEnabled: false];
         [informationButton setEnabled:false];
         [dustButton setEnabled:false];
+         [self disableOtherTabs];
     }
     
-    [self disableOtherTabs];
+    
+    
     /********/
 }
 
@@ -590,6 +592,8 @@ NSURLConnection *pm25Connection;
             self.tabBarController.selectedIndex=0;
         }
     }
+    
+
 
 }
 /*
