@@ -24,6 +24,12 @@
 -(void) update;
 @end
 
+@protocol AlertButtonClicked
+
+@optional
+-(void)onButtonClicked:(int)buttonIndex;
+@end
+
 //PM2.5参数
 #define PM_DATA_AQI             @"AQI"
 #define PM_DATA_CO              @"CO/1h"

@@ -84,7 +84,7 @@
 @property NSString *TEXT_ANION_OFF;
 @property NSString *T_ANALYZATION;
 @property NSString *T_AIR_QUALITY;
-
+@property NSString *TEXT_AIR_MOTOR_TITLE;
 
 /**
  * @ zhongqihong
@@ -99,6 +99,7 @@
 @property NSString *WEATHER_HUMIDITY;
 @property NSString *SUGGESTION;
 @property NSString *WIND_DIRECTION;
+@property NSString *ANION_STATE_TITLE;
 /******/
 
 +(LocalizedString*)getInstance;

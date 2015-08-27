@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A23873B1B8ACCDA009B2611 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A23873A1B8ACCDA009B2611 /* SystemConfiguration.framework */; };
 		8A23873E1B8ACF09009B2611 /* JPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23873D1B8ACF09009B2611 /* JPNetwork.m */; };
-		8A57C28B1B85B4C70003E1C8 /* MainTabView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */; };
+		8A57A5181B8DA05000B2A072 /* MainTabView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57A5171B8DA05000B2A072 /* MainTabView_iPhone.xib */; };
 		8A57C28D1B85C1E40003E1C8 /* MainTabView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */; };
 		8A6335271B6A746000BBA939 /* CitySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6335251B6A746000BBA939 /* CitySearchController.m */; };
 		8A6335281B6A746000BBA939 /* CitySearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6335261B6A746000BBA939 /* CitySearchController.xib */; };
@@ -336,7 +336,7 @@
 		8A23873A1B8ACCDA009B2611 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8A23873C1B8ACF09009B2611 /* JPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNetwork.h; sourceTree = "<group>"; };
 		8A23873D1B8ACF09009B2611 /* JPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNetwork.m; sourceTree = "<group>"; };
-		8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPhone.xib; sourceTree = "<group>"; };
+		8A57A5171B8DA05000B2A072 /* MainTabView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPhone.xib; sourceTree = "<group>"; };
 		8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabView_iPad.xib; sourceTree = "<group>"; };
 		8A6335241B6A746000BBA939 /* CitySearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchController.h; sourceTree = "<group>"; };
 		8A6335251B6A746000BBA939 /* CitySearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchController.m; sourceTree = "<group>"; };
@@ -840,8 +840,8 @@
 		99B334BA1926060A00FD802E /* main */ = {
 			isa = PBXGroup;
 			children = (
+				8A57A5171B8DA05000B2A072 /* MainTabView_iPhone.xib */,
 				8A57C28C1B85C1E40003E1C8 /* MainTabView_iPad.xib */,
-				8A57C28A1B85B4C70003E1C8 /* MainTabView_iPhone.xib */,
 				8A8C033B1B79E6740098078A /* MyTableViewController.xib */,
 				8A63352F1B6A7F9900BBA939 /* MyResultsViewController.h */,
 				8A6335301B6A7F9900BBA939 /* MyResultsViewController.m */,
@@ -1528,8 +1528,8 @@
 				99F2AC7C19A43E740082CF8C /* inf_icon.png in Resources */,
 				999F43BB19AAE8FA0069851C /* backTitle_iphone5_mask.png in Resources */,
 				99F6BD3E197CFB2300BFB3D7 /* healthConsultant.plist in Resources */,
-				8A57C28B1B85B4C70003E1C8 /* MainTabView_iPhone.xib in Resources */,
 				99F6BA5A1978AE7A00BFB3D7 /* face11.jpg in Resources */,
+				8A57A5181B8DA05000B2A072 /* MainTabView_iPhone.xib in Resources */,
 				999F43D019AC8A670069851C /* PMInformationView_iphone5.xib in Resources */,
 				99F2AC7119A429FB0082CF8C /* pm25_level4.png in Resources */,
 				99F2AC27199083480082CF8C /* device_voltage.png in Resources */,

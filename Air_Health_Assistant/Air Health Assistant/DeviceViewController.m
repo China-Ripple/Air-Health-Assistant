@@ -94,6 +94,9 @@
     [anionStateTitle setText:localizedString.TITLE_ANION_STATE];
     [totalRunTimeTitle setText:localizedString.TITLE_TOTAL_RUNTIME];
     [dustLevelTitle setText:localizedString.TITLE_DUST];
+    
+  
+    
     //[aqGerneratorVoltageTitle setText:localizedString.TITLE_VOLTAGE];
     [connectionStateTitle setText:localizedString.TITLE_CONNECTION_STATE];
     //字体
@@ -121,14 +124,29 @@
     [connectionStateL setFont:xbody.textFont];
     //负离子按钮
     [anionTitle setFont:xbody.titleFont];
+    [anionTitle setText:localizedString.ANION_STATE_TITLE];
+    
     [anionOnButton.titleLabel setFont:xbody.bigTitleFont];
+    [anionOnButton setTitle:localizedString.TEXT_ANION_ON forState:UIControlStateNormal];
+
     [anionOffButton.titleLabel setFont:xbody.bigTitleFont];
+    [anionOffButton setTitle:localizedString.TEXT_ANION_OFF forState:UIControlStateNormal];
     //风扇按钮
     [airMotorTitle setFont:xbody.titleFont];
+    [airMotorTitle setText:localizedString.TEXT_AIR_MOTOR_TITLE];
+    
     [airMotor0Button.titleLabel setFont:xbody.bigTitleFont];
+    [airMotor0Button setTitle:localizedString.TEXT_AIR_MOTOR_0 forState:UIControlStateNormal];
+    
+    
     [airMotor1Button.titleLabel setFont:xbody.bigTitleFont];
+    [airMotor1Button setTitle:localizedString.TEXT_AIR_MOTOR_1 forState:UIControlStateNormal];
+    
     [airMotor2Button.titleLabel setFont:xbody.bigTitleFont];
+    [airMotor2Button setTitle:localizedString.TEXT_AIR_MOTOR_2 forState:UIControlStateNormal];
+    
     [airMotor3Button.titleLabel setFont:xbody.bigTitleFont];
+    [airMotor3Button setTitle:localizedString.TEXT_AIR_MOTOR_3 forState:UIControlStateNormal];
 }
 -(void)refreshState
 {

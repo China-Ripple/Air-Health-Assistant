@@ -76,6 +76,7 @@
 "TEXT_AIR_MOTOR_1" = "风扇1";
 "TEXT_AIR_MOTOR_2" = "风扇2";
 "TEXT_AIR_MOTOR_3" = "风扇3";
+"TEXT_AIR_MOTOR_TITLE"="风扇";
 "TEXT_ANION_ON" = "负离子开";
 "TEXT_ANION_OFF" = "负离子关";
 "T_ANALYZATION" = "环境建议";
@@ -95,6 +96,7 @@
 "WIND_SPEED" = "风速";
 "WEATHER_HUMIDITY" ="湿度";
 "SUGGESTION" ="天气情况建议";
+"ANION_STATE_TITLE"="负离子状态";
 /****/
 
 

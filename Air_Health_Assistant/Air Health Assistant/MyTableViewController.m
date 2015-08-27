@@ -47,7 +47,7 @@
     _isActive = false;
     
     if(alter ==nil ){
-         alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"正在搜索城市，请稍后" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil];
+         alter = [[UIAlertView alloc] initWithTitle:@"Tip" message:@"Searching for the city" delegate:nil cancelButtonTitle:@"Wait" otherButtonTitles:nil];
     }
     
     
@@ -80,7 +80,7 @@
         self.mSearchBar.searchBarStyle = UISearchBarStyleDefault;
         self.mSearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
         self.mSearchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
-        self.mSearchBar.placeholder = @"搜索城市";
+        self.mSearchBar.placeholder = @"Search for city";
         self.mSearchBar.delegate = self;
         self.mSearchBar.showsCancelButton = false;
         self.mSearchBar.keyboardType=UIKeyboardTypePhonePad;
@@ -154,11 +154,20 @@
     BOOL reachability = [JPNetwork connectedToNetwork ];
     
     if(reachability == false){
-        [JPNetwork networkBreak ];
+        
+
+        [JPNetwork networkBreak:self];
+        [super viewWillAppear:animated];
+        return ;
     }
     else {
        [self startLocation]; 
     }
+    
+
+  
+    
+    
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     
     
@@ -168,9 +177,16 @@
     [self.navigationController.navigationBar setBackgroundImage:stretchedImage forBarMetrics:UIBarMetricsDefault];
     
     
-    
-    [super viewWillAppear:animated];
+     [super viewWillAppear:animated];
+   
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    NSLog(@"clickedButtonAtIndex");
+     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 
 -(void) viewWillDisappear:(BOOL)animated{
     //设置导航栏背景
@@ -188,18 +204,21 @@
     
     
 }
+-(void)onButtonClicked:(int)buttonIndex{
+    
+    NSLog(@"onButtonClicked");
+    
+}
 
 -(void)startLocation{
     
     if ([CLLocationManager locationServicesEnabled] == NO) {
         
-        NSLog(@"没有GPS服务");
-        
         self.locationMgr = nil;
         
         
         
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"警告" message:@"没有GPS服务,在设置中打开定位功能可以自动定位城市。" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"network is unreachable " delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
         
         [alertView show];
         
@@ -299,7 +318,9 @@
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     NSLog(@"纬度获取失败%@",error);
+  //   [JPNetwork networkBreak:self];
 }
+
 
 
 -(void)cityLocated:(NSString *)city cityCode:(NSString *)weiod{
@@ -335,7 +356,7 @@
     if ([self isSearchBarActive]) {
         
         if(section == 0){
-            return 1;
+            return [self.dataArray count ];
         }
         else{
             return [self.searchList count];
@@ -350,14 +371,14 @@
     
     if ([self isSearchBarActive]) {
         if(section == 0){
-            return @"定位的城市";
+            return @"current location";
         }
         else{
-            return @"搜索城市";
+            return @"searching result";
         }
     }
     else{
-        return @"定位城市";
+        return @"current location";
     }
     
 }
@@ -453,6 +474,7 @@
     }
     
     // Configure the cell...
+    NSLog(@"indexPath %f",indexPath.row);
     
     if ([self isSearchBarActive]) {
         
@@ -576,9 +598,13 @@
         [self.searchController setActive: active];
     }
     else {
-        [self.searchList removeAllObjects];
+        if(self.searchList !=nil && self.searchList.count>0){
+            [self.searchList removeAllObjects];
+        }
+
         _isActive = active;
     }
+   
     [self.tableView reloadData];
     
 }

@@ -44,12 +44,12 @@
 "PAGE_HEALTH_EXERCISE" = "Health Exercise";
 "PAGE_ACCOUNT" = "个人信息";
 "PAGE_ONLINE_STORE" = "Online Store";
-"PAGE_PM25_DETAIL" = "PM2.5详细";
+"PAGE_PM25_DETAIL" = "PM2.5";
 "PAGE_WEATHER_DETAIL" = "Weather Detail";
-"PAGE_DEVICE" = "我的空气净化器";
-"PAGE_CITY_SELECT" = "城市选择";
-"PAGE_INFORMATION" = "信息";
-"PAGE_DUST_DETAIL" = "烟气检测";
+"PAGE_DEVICE" = "My Device";
+"PAGE_CITY_SELECT" = "City";
+"PAGE_INFORMATION" = "Infomation";
+"PAGE_DUST_DETAIL" = "Dust Detail";
 "PAGE_REGISTER" = "注册";
 "PAGE_TEST1" = "Self Examination";
 "PAGE_TEST2" = "Consultant";
@@ -73,10 +73,11 @@
 "DUST_LEVEL4" = "Hard Polllution";
 "TEXT_POWER_ON" = "Power On";
 "TEXT_POWER_OFF" = "Power Off";
-"TEXT_AIR_MOTOR_0" = "Mottor Off";
-"TEXT_AIR_MOTOR_1" = "MOTTOR1";
-"TEXT_AIR_MOTOR_2" = "MOTTOR2";
-"TEXT_AIR_MOTOR_3" = "MOTTOR3";
+"TEXT_AIR_MOTOR_0" = "FAN Off";
+"TEXT_AIR_MOTOR_1" = "FAN1";
+"TEXT_AIR_MOTOR_2" = "FAN2";
+"TEXT_AIR_MOTOR_3" = "FAN3";
+"TEXT_AIR_MOTOR_TITLE"="FANS";
 "TEXT_ANION_ON" = "Anion On";
 "TEXT_ANION_OFF" = "Anion Off";
 "T_ANALYZATION" = "Analization";
@@ -95,6 +96,8 @@
 "WIND_SPEED" = "Wind Speed";
 "WEATHER_HUMIDITY" ="Humidity";
 "SUGGESTION" ="Suggestion";
+"ANION_STATE_TITLE"="Anion State";
+
 /****/
 
 

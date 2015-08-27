@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XBody.h"
 
-@interface JPNetwork : NSObject
+@interface JPNetwork : NSObject<UIAlertViewDelegate>
+
 
 
 + (BOOL) connectedToNetwork;
 
-+ (void) networkBreak;
++ (void) networkBreak:(id<AlertButtonClicked>)dele;
++ (void) setAlertDelegate:(id<AlertButtonClicked>) dele;
+
+
 
 @end

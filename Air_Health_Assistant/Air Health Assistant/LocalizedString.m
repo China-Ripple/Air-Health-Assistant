@@ -93,6 +93,8 @@
 @synthesize WEATHER_HUMIDITY;
 @synthesize SUGGESTION;
 @synthesize WIND_DIRECTION;
+@synthesize ANION_STATE_TITLE;
+@synthesize TEXT_AIR_MOTOR_TITLE;
 
 +(LocalizedString*)getInstance{
     static LocalizedString *localizedString = nil;
@@ -203,6 +205,10 @@
     
     WIND_DIRECTION=NSLocalizedStringFromTable(@"WIND_DIRECTION",@"Localization",nil);
     
+    ANION_STATE_TITLE =NSLocalizedStringFromTable(@"ANION_STATE_TITLE",@"Localization",nil);
+    
+    TEXT_AIR_MOTOR_TITLE = NSLocalizedStringFromTable(@"TEXT_AIR_MOTOR_TITLE",@"Localization",nil);
+
 }
 
 @end

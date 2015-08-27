@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreLocation/CLLocationManagerDelegate.h>
 #import "XBody.h"
-@interface MyTableViewController : UITableViewController<UISearchResultsUpdating,CLLocationManagerDelegate,UISearchBarDelegate,LocateCity,UpdateCitys>
+@interface MyTableViewController : UITableViewController<UISearchResultsUpdating,CLLocationManagerDelegate,UISearchBarDelegate,LocateCity,UpdateCitys,UIAlertViewDelegate>
     {
        // CLLocationManager* locationMgr;
     }

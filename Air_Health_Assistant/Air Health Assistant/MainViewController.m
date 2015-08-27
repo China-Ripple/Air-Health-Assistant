@@ -77,6 +77,9 @@ NSURLConnection *pm25Connection;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    LocalizedString *localizedString = [LocalizedString getInstance];
     // Do any additional setup after loading the view from its nib.
     //[[RtBleNvcService sharedInstance]initCiGate];
     
@@ -160,19 +163,37 @@ NSURLConnection *pm25Connection;
             NSLog(@" Font name: %@",[fontNames objectAtIndex:indFont]);
         }
     }*/
+    
     //字体
     [pm25Button.information setFont:xbody.textFont];
     [weatherButton.information setFont:xbody.textFont];
+    
     [deviceButton.information setFont:xbody.textFont];
     [citySelectButton.information setFont:xbody.textFont];
     [informationButton.information setFont:xbody.textFont];
     [dustButton.information setFont:xbody.textFont];
+    [dustButton.information setText:@""];
+    
+    
+  
+    
     [pm25ButtonDes setFont:xbody.titleFont];
+    [pm25ButtonDes setText:localizedString.PAGE_PM25_DETAIL];
+    
     [weatherButtonDes setFont:xbody.titleFont];
+    [weatherButtonDes setText:localizedString.PAGE_WEATHER_DETAIL];
+    
     [deviceButtonDes setFont:xbody.titleFont];
+    [deviceButtonDes setText:localizedString.PAGE_DEVICE];
+    
     [citySelectButtonDes setFont:xbody.titleFont];
+    [citySelectButtonDes setText:localizedString.PAGE_CITY_SELECT];
+    
     [informationButtonDes setFont:xbody.titleFont];
+    [informationButtonDes setText:localizedString.PAGE_INFORMATION];
+    
     [dustButtonDes setFont:xbody.titleFont];
+    [dustButtonDes setText:localizedString.PAGE_DUST_DETAIL];
     
     //self.navigationController.tabBarItem.image = [UIImage imageNamed:@"tabbar_item.png"];
     /*
@@ -200,7 +221,7 @@ NSURLConnection *pm25Connection;
     /**
      * @zhongqihong
      **/
-    LocalizedString *localizedString = [LocalizedString getInstance];
+
     self.navigationController.title =localizedString.PAGE_MAIN;
      self.navigationItem.title =localizedString.PAGE_MAIN;
     
@@ -214,6 +235,8 @@ NSURLConnection *pm25Connection;
         [informationButton setEnabled:false];
         [dustButton setEnabled:false];
     }
+    
+    [self disableOtherTabs];
     /********/
 }
 
@@ -552,6 +575,22 @@ NSURLConnection *pm25Connection;
 {
     NSLog(@"locateCity");
     [[MMLocationManager shareLocation]gpsLocateCity];
+}
+-(void)disableOtherTabs{
+    
+    UITabBar *myTb=self.tabBarController.tabBar;
+    for(UITabBarItem *utb in myTb.items)
+    {
+        if( ![utb.title isEqualToString:@"Main"] )
+        {
+            utb.enabled=NO;
+        }
+        else {
+            utb.enabled=YES;
+            self.tabBarController.selectedIndex=0;
+        }
+    }
+
 }
 /*
 #define SR_TIME_OUT_INTERVAL 10
