@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2513" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -17,7 +17,7 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <size key="freeformSize" width="320" height="568"/>
-            <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" selectedItem="KWc-8c-tS2" id="gKs-ZE-M5C">
+            <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="gKs-ZE-M5C">
                 <rect key="frame" x="0.0" y="544" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             </tabBar>
@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OrY-qy-uET">
-                                        <rect key="frame" x="14" y="108.5" width="292" height="56.5"/>
+                                        <rect key="frame" x="14" y="108" width="292" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="自测身体是否健康" backgroundImage="test_excersize_button.png">
@@ -49,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pfa-US-1lA">
-                                        <rect key="frame" x="14" y="199.5" width="292" height="56.5"/>
+                                        <rect key="frame" x="14" y="199" width="292" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="健康问医生" backgroundImage="test_excersize_button.png">
@@ -61,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZDq-TN-eLw">
-                                        <rect key="frame" x="14" y="290.5" width="292" height="56.5"/>
+                                        <rect key="frame" x="14" y="290" width="292" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="从指甲看健康" backgroundImage="test_excersize_button.png">
@@ -102,30 +102,30 @@
                     <viewControllers>
                         <viewController id="WMb-9b-0ep" customClass="MainViewController">
                             <view key="view" contentMode="scaleToFill" id="FW2-q3-Z6r">
-                                <rect key="frame" x="0.0" y="64" width="320" height="229"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="342"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="ZRw-Vh-3QR">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="149.5"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="251"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="JPp-zq-2Ls" userLabel="Pretty Button - pm2.5" customClass="PrettyButton">
-                                                <rect key="frame" x="41" y="5" width="100" height="34.5"/>
+                                                <rect key="frame" x="41" y="8" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pm25_icon1.png" id="LFx-Ar-aDN">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm2.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="nKP-Se-ERU">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="O9L-XQ-jnV">
-                                                        <rect key="frame" x="32" y="0.0" width="37" height="37"/>
+                                                        <rect key="frame" x="32" y="21" width="37" height="37"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     </activityIndicatorView>
                                                 </subviews>
@@ -136,22 +136,22 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" id="uDz-6T-dfE" userLabel="Pretty Button - weather" customClass="PrettyButton">
-                                                <rect key="frame" x="180" y="5" width="100" height="34.5"/>
+                                                <rect key="frame" x="180" y="8" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_d_00.png" id="4a5-hD-o2X">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="9" id="UuH-Dt-O0I">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="Gb5-6X-FEt">
-                                                        <rect key="frame" x="32" y="0.0" width="37" height="37"/>
+                                                        <rect key="frame" x="32" y="21" width="37" height="37"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     </activityIndicatorView>
                                                 </subviews>
@@ -162,15 +162,15 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" id="mnT-ae-eld" userLabel="Pretty Button - device connection" customClass="PrettyButton">
-                                                <rect key="frame" x="41" y="51" width="100" height="34.5"/>
+                                                <rect key="frame" x="41" y="85" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_device_button.png" id="gFp-zw-1r3">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="device connection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="Czw-1K-nh8">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,15 +184,15 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" id="unL-eC-8lV" userLabel="Pretty Button - city select" customClass="PrettyButton">
-                                                <rect key="frame" x="180" y="51" width="100" height="34.5"/>
+                                                <rect key="frame" x="180" y="85" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city_select.png" id="8MX-YW-BYW">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city select" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="d3F-kw-rIm">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,15 +206,15 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" id="AYj-n5-dPT" userLabel="Pretty Button - information" customClass="PrettyButton">
-                                                <rect key="frame" x="41" y="98" width="100" height="34.5"/>
+                                                <rect key="frame" x="41" y="164" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inf_icon.png" id="ciA-8F-s4u">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="information" lineBreakMode="tailTruncation" minimumFontSize="9" id="DBF-Sa-j8w">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,15 +228,15 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" id="8wr-e4-IDC" userLabel="Pretty Button - dust" customClass="PrettyButton">
-                                                <rect key="frame" x="180" y="98" width="100" height="34.5"/>
+                                                <rect key="frame" x="180" y="164" width="100" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust_icon0.png" id="g2b-0d-Vl7">
-                                                        <rect key="frame" x="30" y="10.5" width="41" height="16.5"/>
+                                                        <rect key="frame" x="30" y="17" width="41" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="烟气" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="9" id="LVP-jb-QWm">
-                                                        <rect key="frame" x="5" y="0.0" width="90" height="9.5"/>
+                                                        <rect key="frame" x="5" y="0.0" width="90" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,42 +250,42 @@
                                                 </connections>
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm2.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U9a-i7-JQz">
-                                                <rect key="frame" x="41" y="39.5" width="100" height="8"/>
+                                                <rect key="frame" x="41" y="66" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dGi-6m-vAV">
-                                                <rect key="frame" x="180" y="39.5" width="100" height="8"/>
+                                                <rect key="frame" x="180" y="66" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aRW-Q2-Sif">
-                                                <rect key="frame" x="41" y="85.5" width="100" height="8"/>
+                                                <rect key="frame" x="41" y="143" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZTa-Ou-dTM">
-                                                <rect key="frame" x="180" y="85.5" width="100" height="8"/>
+                                                <rect key="frame" x="180" y="143" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="clH-am-MjW">
-                                                <rect key="frame" x="41" y="132.5" width="100" height="8"/>
+                                                <rect key="frame" x="41" y="222" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="烟气监测" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kb2-X1-fZ2">
-                                                <rect key="frame" x="180" y="132.5" width="100" height="8"/>
+                                                <rect key="frame" x="180" y="222" width="100" height="13"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,7 +335,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RVG-oY-vym">
-                                                <rect key="frame" x="14" y="14" width="292" height="43.5"/>
+                                                <rect key="frame" x="14" y="14" width="292" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="瑜伽呼吸法-胸式呼吸法" backgroundImage="test_excersize_button.png">
@@ -347,7 +347,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nyu-fD-1dK">
-                                                <rect key="frame" x="14" y="62.5" width="292" height="43.5"/>
+                                                <rect key="frame" x="14" y="62" width="292" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="瑜伽呼吸法-完全呼吸法" backgroundImage="test_excersize_button.png">
@@ -371,7 +371,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="32W-V6-qHh">
-                                                <rect key="frame" x="14" y="160" width="292" height="43.5"/>
+                                                <rect key="frame" x="14" y="160" width="292" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="瑜伽呼吸减肥法 专瘦腹部" backgroundImage="test_excersize_button.png">
@@ -383,7 +383,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jxb-nN-rky">
-                                                <rect key="frame" x="14" y="208.5" width="292" height="43.5"/>
+                                                <rect key="frame" x="14" y="208" width="292" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="能量治疗" backgroundImage="test_excersize_button.png">
@@ -420,15 +420,15 @@
                     <viewControllers>
                         <viewController id="Vcs-U2-HbA" customClass="OnlineStoreViewController">
                             <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="kuq-E0-RSd">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="342"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" id="nTi-ML-Zsg">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="391"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="278"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qmy-gl-ypu">
-                                                <rect key="frame" x="0.0" y="-64" width="320" height="455"/>
+                                                <rect key="frame" x="0.0" y="-64" width="320" height="342"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>

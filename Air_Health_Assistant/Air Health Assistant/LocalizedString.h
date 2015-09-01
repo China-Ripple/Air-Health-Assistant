@@ -101,6 +101,17 @@
 @property NSString *WIND_DIRECTION;
 @property NSString *ANION_STATE_TITLE;
 /******/
+@property NSString  *DUST_STATE;
+@property NSString *IMPROVE;
+@property NSString *AIR_ENVIRONMENT_PROPOSE;
+@property NSString *HEALTHY_AFFECT_CONDITION;
+@property NSString *PROPOSE_ACTION_MEASURES;
+@property NSString *WEATHER_ENVIRONMENT_PROPOSE;
+@property NSString *FLUE_EXAMINE;
+@property NSString *PRESENT_INDOOR_AIR_INDEX;
+@property NSString *AIR_CLEAN;
+@property NSString *IMPROVE_PROPOSE;
+@property NSString *PRESENT_AIR_QUALITY_WELL;
 
 +(LocalizedString*)getInstance;
 -(void)localize;

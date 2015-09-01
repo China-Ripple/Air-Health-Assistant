@@ -70,6 +70,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    LocalizedString *localizedString = [LocalizedString getInstance];
     //字体
     XBody *xbody = [XBody getInstance];
     //烟气标题
@@ -82,15 +83,34 @@
     [cityLabel setFont:xbody.smallFont];
     //污染等级色条
     [dustTextL1 setFont:xbody.textFont];
+    [dustTextL1 setText:localizedString.AIR_CLEAN];
     [dustTextL2 setFont:xbody.textFont];
     [dustTextL3 setFont:xbody.textFont];
     [dustTextL4 setFont:xbody.textFont];
     //当前室内空气指数
     [dustDetailTitle setFont:xbody.titleFont];
+    [dustDetailTitle setText:localizedString.PRESENT_INDOOR_AIR_INDEX];
     //改善建议
     [dustSuggestTitle setFont:xbody.titleFont];
+    [dustSuggestTitle setText:localizedString.IMPROVE_PROPOSE];
     //建议内容
     [dustSuggestContent setFont:xbody.textFont];
+    //烟气检测
+    [dustTitle setFont:xbody.titleFont];
+    [dustTitle setText:localizedString.FLUE_EXAMINE];
+    
+    //空气清洁
+    [dustDataTextLabel setFont:xbody.titleFont];
+    [dustDataTextLabel setText:localizedString.AIR_CLEAN];
+   
+    
+    
+    
+    
+  
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

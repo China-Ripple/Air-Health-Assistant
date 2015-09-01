@@ -232,8 +232,8 @@ NSURLConnection *pm25Connection;
     if(lan == 1){
 
         [pm25Button setEnabled: false];
-        [informationButton setEnabled:false];
-        [dustButton setEnabled:false];
+        //[informationButton setEnabled:false];
+        //[dustButton setEnabled:false];
          [self disableOtherTabs];
     }
     
