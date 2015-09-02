@@ -26,6 +26,7 @@
 @synthesize weatherValue;
 //天气单位
 @synthesize weatherUnit;
+
 //城市
 @synthesize cityLabel;
 //天气文字展示
@@ -54,6 +55,7 @@
 //缩放框架
 @synthesize frameView;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -67,8 +69,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+  
     LocalizedString *localizedString = [LocalizedString getInstance];
+    
+    
+    
+    
+    
     //设置字体
     XBody *xbody = [XBody getInstance];
     //天气图形
@@ -78,8 +85,25 @@
     
     //天气数值
     [weatherValue setFont:xbody.bigTextFont];
+   
+    
     //天气单位
+    
     [weatherUnit setFont:xbody.midTextFont];
+
+    int lan = [xbody getCurrentLanguage];
+   
+    if(lan == 1){
+        [weatherUnit setText:@"℉"];
+    }
+    else{
+        [weatherUnit setText:@"℃"];
+    }
+    
+   
+   
+ 
+    
     //城市
     [cityLabel setFont:xbody.smallFont];
     //天气文字展示
@@ -99,7 +123,7 @@
     [weatherTempLowContent setFont:xbody.textFont];
     //风力
     [weatherWDTitle setFont:xbody.titleFont];
-     [weatherWDTitle setText:localizedString.WIND_POWER];
+    [weatherWDTitle setText:localizedString.WIND_POWER];
     [weatherWDContent setFont:xbody.textFont];
     //风向
     [weatherWSTitle setFont:xbody.titleFont];
@@ -116,6 +140,18 @@
     //穿衣指数
     [weatherSuggestContent setFont:xbody.textFont];
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 -(void)viewWillAppear:(BOOL)animated
 {

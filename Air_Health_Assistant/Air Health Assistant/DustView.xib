@@ -441,7 +441,7 @@
     </objects>
     <resources>
         <image name="dust_detail_frame.png" width="641" height="609"/>
-        <image name="dust_icon.png" width="141" height="141"/>
+        <image name="dust_icon.png" width="25" height="25"/>
         <image name="dust_icon0.png" width="141" height="141"/>
         <image name="dust_level0.png" width="137" height="21"/>
         <image name="dust_level1.png" width="137" height="21"/>

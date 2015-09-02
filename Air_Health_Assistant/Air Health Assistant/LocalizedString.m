@@ -100,10 +100,10 @@
 @synthesize AIR_ENVIRONMENT_PROPOSE;
 @synthesize HEALTHY_AFFECT_CONDITION;
 @synthesize PROPOSE_ACTION_MEASURES;
-@synthesize  WEATHER_ENVIRONMENT_PROPOSE;
+@synthesize WEATHER_ENVIRONMENT_PROPOSE;
 @synthesize FLUE_EXAMINE;
 @synthesize PRESENT_INDOOR_AIR_INDEX;
-@synthesize  AIR_CLEAN;
+@synthesize AIR_CLEAN;
 @synthesize IMPROVE_PROPOSE;
 @synthesize PRESENT_AIR_QUALITY_WELL;
 
@@ -229,13 +229,20 @@
     IMPROVE =  NSLocalizedStringFromTable(@"IMPROVE",@"Localization",nil);
     AIR_ENVIRONMENT_PROPOSE = NSLocalizedStringFromTable(@"AIR_ENVIRONMENT_PROPOSE",@"Localization",nil);
     HEALTHY_AFFECT_CONDITION = NSLocalizedStringFromTable(@"HEALTHY_AFFECT_CONDITION",@"Localization",nil);
-    PROPOSE_ACTION_MEASURES = NSLocalizedStringFromTable(@" PROPOSE_ACTION_MEASURES",@"Localization",nil);
-    WEATHER_ENVIRONMENT_PROPOSE = NSLocalizedStringFromTable(@" WEATHER_ENVIRONMENT_PROPOSE",@"Localization",nil);
+    
+    PROPOSE_ACTION_MEASURES = NSLocalizedStringFromTable(@"PROPOSE_ACTION_MEASURES",@"Localization",nil);
+    
+    WEATHER_ENVIRONMENT_PROPOSE = NSLocalizedStringFromTable(@"WEATHER_ENVIRONMENT_PROPOSE",@"Localization",nil);
+    
+    
+    
     FLUE_EXAMINE = NSLocalizedStringFromTable(@"FLUE_EXAMINE",@"Localization",nil);
     PRESENT_INDOOR_AIR_INDEX = NSLocalizedStringFromTable(@"PRESENT_INDOOR_AIR_INDEX",@"Localization",nil);
     AIR_CLEAN = NSLocalizedStringFromTable(@"AIR_CLEAN",@"Localization",nil);
     IMPROVE_PROPOSE = NSLocalizedStringFromTable(@"IMPROVE_PROPOSE",@"Localization",nil);
     PRESENT_AIR_QUALITY_WELL = NSLocalizedStringFromTable(@"PRESENT_AIR_QUALITY_WELL",@"Localization",nil);
+    
+   
 
 }
 

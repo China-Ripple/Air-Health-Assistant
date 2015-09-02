@@ -40,6 +40,7 @@
 //缩放框架
 @synthesize frameView;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -53,6 +54,7 @@
 {
     [super viewDidLoad];
     LocalizedString *localizedString = [LocalizedString getInstance];
+   
     // Do any additional setup after loading the view from its nib.
     XBody *xbody = [XBody getInstance];
     //字体
@@ -64,6 +66,7 @@
 
     //温度
     [infTempValue setFont:xbody.textFont];
+   
     
     //PM2.5
     [infPM25Value setFont:xbody.textFont];
@@ -85,7 +88,9 @@
     
     //建议环境建议
     [weatherSugguestTitle setFont:xbody.titleFont];
-    [weatherSugguestTitle setText:localizedString.AIR_ENVIRONMENT_PROPOSE];
+    [weatherSugguestTitle setText:localizedString.WEATHER_ENVIRONMENT_PROPOSE];
+    
+    NSLog(@"WEATHER_ENVIRONMENT_PROPOSE %@",localizedString.WEATHER_ENVIRONMENT_PROPOSE);
     
     //建议天气运动指数
     [sportIndex setFont:xbody.textFont];
@@ -118,11 +123,35 @@
     XBody *xbody = [XBody getInstance];
     NSMutableDictionary *weather = [XBody getWeather];
     LocalizedString * localizedString = [LocalizedString getInstance];
+  
+   
     //建议图形
     //建议标题
     //温度
-    NSString *temp = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
-    [infTempValue setText:temp];
+//     LocalizedString * unit = [LocalizedString getInstance];
+//    NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+//    [infTempValue setText:temp];
+//    NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+//    [infTempValue setText:temp1];
+//    if (unit!=temp) {
+//        NSLog(@"@℃");
+//    }
+    
+    int lan = [xbody getCurrentLanguage];
+   
+    if(lan == 1){
+        NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+        
+        [infTempValue setText:temp];
+        
+    }
+    else{
+          NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+            [infTempValue setText:temp1];
+        
+    }
+    
+   
     //PM2.5
     NSString *pm25Value = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_PM2_5_1H]];
     [infPM25Value setText:[NSString stringWithFormat:@"PM2.5: %@ ug/m³",pm25Value]];

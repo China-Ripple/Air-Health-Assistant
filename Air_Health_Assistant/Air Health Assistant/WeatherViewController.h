@@ -56,6 +56,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *weatherSuggestContent;
 //缩放框架
 @property (strong, nonatomic) IBOutlet UIView *frameView;
-
 -(void)refreshData;
+
 @end

@@ -342,7 +342,7 @@
     </objects>
     <resources>
         <image name="font.png" width="1213" height="999"/>
-        <image name="pm25_icon.png" width="141" height="141"/>
+        <image name="pm25_icon.png" width="25" height="25"/>
         <image name="pm25_line.png" width="592" height="6"/>
         <image name="weather_d_00.png" width="141" height="141"/>
         <image name="weather_detail_frame.png" width="640" height="609"/>
