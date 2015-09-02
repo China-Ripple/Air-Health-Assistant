@@ -100,4 +100,19 @@
 
 /****/
 
+"DUST_STATE"="Dust State";
+"IMPROVE"="Improve";
+"AIR_ENVIRONMENT_PROPOSE"="Air Environment Propose";
+"HEALTHY_AFFECT_CONDITION"="Healthy Affect Condition";
+"PROPOSE_ACTION_MEASURES"="Propose Action Measures";
+"WEATHER_ENVIRONMENT_PROPOSE"="Weather Environment Propose";
+"FLUE_EXAMINE"="Flue Examine";
+"PRESENT_INDOOR_AIR_INDEX"="Persent Indoor Air Index";
+"AIR_CLEAN"="Air Clean";
+"IMPROVE_PROPOSE"="Improve Propose";
+"PRESENT_AIR_QUALITY_WELL"="Present Air Quality Well";
+
+
+
+
 

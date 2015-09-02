@@ -75,6 +75,7 @@
 @synthesize textFont;
 @synthesize titleFont;
 @synthesize midTextFont;
+
 @synthesize bigTextFont;
 @synthesize bigTitleFont;
 @synthesize buttonFont;
@@ -390,6 +391,11 @@
     }
     return -1;
 }
+
+
+
+
+
 //UI刷新函数
 -(void)timelyTask:(id)sender
 {
@@ -593,10 +599,18 @@ NSString *IMAGE_URL;
             if(temp == nil)temp = localizedString.TEXT_NO_DATA;
             NSString *weatherStr = [weather objectForKey:WEATHER_WEATHER];
             if(weatherStr == nil)weatherStr = localizedString.TEXT_NO_DATA;
-            //NSString *str = [NSString stringWithFormat:@"%@:%@℃ %@:%@",localizedString.WEATHER_TEMP,temp,localizedString.WEATHER_WEATHER,weatherStr];
-            
-            NSString *str = [NSString stringWithFormat:@"%@℃ %@",temp,weatherStr];
-            [mainVC.weatherButton.information setText:str];
+           
+            if (lan == 1) {
+                NSString *str = [NSString stringWithFormat:@"%@℉ %@",temp,weatherStr];
+                [mainVC.weatherButton.information setText:str];
+
+            } else{
+                NSString *str = [NSString stringWithFormat:@"%@℃ %@",temp,weatherStr];
+                [mainVC.weatherButton.information setText:str];
+
+            }
+//            NSString *str = [NSString stringWithFormat:@"%@℃ %@",temp,weatherStr];
+//            [mainVC.weatherButton.information setText:str];
             
             //刷新图片
             NSString *path = [[NSBundle mainBundle] pathForResource:@"weatherImgMap" ofType:@"plist"];

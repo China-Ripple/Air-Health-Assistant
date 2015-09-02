@@ -288,4 +288,5 @@ enum{
 -(int)getPM25Level;
 -(int)getCurrentLanguage;
 
+
 @end

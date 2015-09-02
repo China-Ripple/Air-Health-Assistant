@@ -40,6 +40,7 @@
 //缩放框架
 @synthesize frameView;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -52,31 +53,48 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    LocalizedString *localizedString = [LocalizedString getInstance];
+   
     // Do any additional setup after loading the view from its nib.
     XBody *xbody = [XBody getInstance];
     //字体
     //建议图形
     //建议标题
     [infTitle setFont:xbody.bigTitleFont];
+    [infTitle setText:localizedString.IMPROVE];
+    
+
     //温度
     [infTempValue setFont:xbody.textFont];
+   
+    
     //PM2.5
     [infPM25Value setFont:xbody.textFont];
     //周围烟气状况
     [infDustValue setFont:xbody.textFont];
+    [infDustValue setText:localizedString.DUST_STATE];
+   
     //建议地址
     [cityLabel setFont:xbody.smallFont];
     //建议空气管理贴士
     [airSugguestTitle setFont:xbody.titleFont];
+    [airSugguestTitle setText:localizedString.AIR_ENVIRONMENT_PROPOSE];
     //建议对健康的影响
     [affectLabel setFont:xbody.textFont];
+    [affectLabel setText:localizedString.HEALTHY_AFFECT_CONDITION];
     //建议采取的措施
     [actionLabel setFont:xbody.textFont];
+    [actionLabel setText:localizedString.PROPOSE_ACTION_MEASURES];
+    
     //建议环境建议
     [weatherSugguestTitle setFont:xbody.titleFont];
+    [weatherSugguestTitle setText:localizedString.WEATHER_ENVIRONMENT_PROPOSE];
+    
+    NSLog(@"WEATHER_ENVIRONMENT_PROPOSE %@",localizedString.WEATHER_ENVIRONMENT_PROPOSE);
+    
     //建议天气运动指数
     [sportIndex setFont:xbody.textFont];
-
+    
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -105,11 +123,35 @@
     XBody *xbody = [XBody getInstance];
     NSMutableDictionary *weather = [XBody getWeather];
     LocalizedString * localizedString = [LocalizedString getInstance];
+  
+   
     //建议图形
     //建议标题
     //温度
-    NSString *temp = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
-    [infTempValue setText:temp];
+//     LocalizedString * unit = [LocalizedString getInstance];
+//    NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+//    [infTempValue setText:temp];
+//    NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+//    [infTempValue setText:temp1];
+//    if (unit!=temp) {
+//        NSLog(@"@℃");
+//    }
+    
+    int lan = [xbody getCurrentLanguage];
+   
+    if(lan == 1){
+        NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+        
+        [infTempValue setText:temp];
+        
+    }
+    else{
+          NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
+            [infTempValue setText:temp1];
+        
+    }
+    
+   
     //PM2.5
     NSString *pm25Value = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_PM2_5_1H]];
     [infPM25Value setText:[NSString stringWithFormat:@"PM2.5: %@ ug/m³",pm25Value]];
@@ -135,9 +177,9 @@
     NSString *str_a1 = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_AFFECT]];
     NSString *str_a2 = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_ACTION]];
 
-    [affectLabel setText:[NSString stringWithFormat:@"%@: \n%@",PM_DATA_AFFECT,str_a1]];
+    [affectLabel setText:[NSString stringWithFormat:@"%@: \n%@",localizedString.HEALTHY_AFFECT_CONDITION,str_a1]];
     //建议采取的措施
-    [actionLabel setText:[NSString stringWithFormat:@"%@: \n%@",PM_DATA_ACTION,str_a2]];
+    [actionLabel setText:[NSString stringWithFormat:@"%@: \n%@",localizedString.PROPOSE_ACTION_MEASURES,str_a2]];
     //建议环境建议
     //建议天气运动指数
     /*

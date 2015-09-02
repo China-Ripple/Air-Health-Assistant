@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2513" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -342,7 +342,7 @@
     </objects>
     <resources>
         <image name="font.png" width="1213" height="999"/>
-        <image name="pm25_icon.png" width="141" height="141"/>
+        <image name="pm25_icon.png" width="25" height="25"/>
         <image name="pm25_line.png" width="592" height="6"/>
         <image name="weather_d_00.png" width="141" height="141"/>
         <image name="weather_detail_frame.png" width="640" height="609"/>
