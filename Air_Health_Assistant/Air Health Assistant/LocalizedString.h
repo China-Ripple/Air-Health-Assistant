@@ -101,7 +101,7 @@
 @property NSString *WIND_DIRECTION;
 @property NSString *ANION_STATE_TITLE;
 /******/
-@property NSString  *DUST_STATE;
+@property NSString *DUST_STATE;
 @property NSString *IMPROVE;
 @property NSString *AIR_ENVIRONMENT_PROPOSE;
 @property NSString *HEALTHY_AFFECT_CONDITION;

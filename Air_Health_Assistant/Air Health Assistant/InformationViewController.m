@@ -141,14 +141,13 @@
    
     if(lan == 1){
         NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
-        
-        [infTempValue setText:temp];
+       [infTempValue setText:temp];
         
     }
     else{
           NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
             [infTempValue setText:temp1];
-        
+      
     }
     
    
@@ -156,7 +155,9 @@
     NSString *pm25Value = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_PM2_5_1H]];
     [infPM25Value setText:[NSString stringWithFormat:@"PM2.5: %@ ug/m³",pm25Value]];
     //周围烟气状况
-    [infDustValue setText:[NSString stringWithFormat:@"周围烟气状况: Level %ld",xbody.airQualityDetector]];
+    [infDustValue setText:[NSString stringWithFormat:@"%@: Level %ld",localizedString.DUST_STATE,xbody.airQualityDetector]];
+   
+
     //建议地址
     //日期
     NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
@@ -208,5 +209,6 @@
         default:
             break;
     }
-}
+    
+   }
 @end
