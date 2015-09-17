@@ -113,6 +113,41 @@
 @property NSString *IMPROVE_PROPOSE;
 @property NSString *PRESENT_AIR_QUALITY_WELL;
 
+
+
+@property NSString *DQQXTJHC;
+@property NSString *DQQXTJJC;
+@property NSString *DQQXTJYB;
+@property NSString *DQQXTJH;
+@property NSString *DQQXTJFCH;
+@property NSString *DQKQZLLH;
+@property NSString *CYZS;
+@property NSString *LYZS;
+@property NSString *YDZS;
+@property NSString *GMZS;
+@property NSString *ZKQWRZTX;
+@property NSString *KNDJY;
+@property NSString *XJZZ;
+@property NSString *XJCZ;
+@property NSString *CQGDZ;
+@property NSString *CQGDC;
+@property NSString *CQCZ;
+@property NSString *CQCC;
+@property NSString *CHUNQIUZHUOZ;
+@property NSString *DJCZ;
+@property NSString *TEXT_SUGGESTION1;
+@property NSString *TEXT_SUGGESTION2;
+@property NSString *TEXT_SUGGESTION3;
+@property NSString *TEXT_SUGGESTION4;
+
+
+
+
+
+
+@property NSString *YGRQ;
+@property NSString *ERLNR;
+
 +(LocalizedString*)getInstance;
 -(void)localize;
 @end

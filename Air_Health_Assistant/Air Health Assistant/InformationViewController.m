@@ -41,6 +41,13 @@
 @synthesize frameView;
 
 
+
+
+
+
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -82,6 +89,9 @@
     //建议对健康的影响
     [affectLabel setFont:xbody.textFont];
     [affectLabel setText:localizedString.HEALTHY_AFFECT_CONDITION];
+    //对健康的影响
+    
+    
     //建议采取的措施
     [actionLabel setFont:xbody.textFont];
     [actionLabel setText:localizedString.PROPOSE_ACTION_MEASURES];
@@ -125,17 +135,7 @@
     LocalizedString * localizedString = [LocalizedString getInstance];
   
    
-    //建议图形
-    //建议标题
-    //温度
-//     LocalizedString * unit = [LocalizedString getInstance];
-//    NSString *temp = [NSString stringWithFormat:@"%@: %@ ℉",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
-//    [infTempValue setText:temp];
-//    NSString *temp1 = [NSString stringWithFormat:@"%@: %@ ℃",localizedString.WEATHER_TEMP,[xbody checkNull:[weather objectForKey:WEATHER_TEMP]]];
-//    [infTempValue setText:temp1];
-//    if (unit!=temp) {
-//        NSLog(@"@℃");
-//    }
+ 
     
     int lan = [xbody getCurrentLanguage];
    
@@ -176,39 +176,66 @@
     //建议空气管理贴士
     //建议对健康的影响
     NSString *str_a1 = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_AFFECT]];
+    
     NSString *str_a2 = [xbody checkNull:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_ACTION]];
 
     [affectLabel setText:[NSString stringWithFormat:@"%@: \n%@",localizedString.HEALTHY_AFFECT_CONDITION,str_a1]];
+    
+
+
+    
+
     //建议采取的措施
     [actionLabel setText:[NSString stringWithFormat:@"%@: \n%@",localizedString.PROPOSE_ACTION_MEASURES,str_a2]];
+    
+            
+   
+   
     //建议环境建议
     //建议天气运动指数
     /*
      （1）K=0时为1级，表示气象条件很差，不适宜户外体育运动，可适当进行户内体育运动，如篮球、网球、乒乓球等；
+     
      （2）K=1时为2级，表示气象条件较差，不太适宜户外体育运动，可进行户内体育运动，如篮球、网球、乒乓球等；
      （3）K=2或K=4时为3级，表示气象条件一般，比较适宜户外体育运动，可增加户外体育运动，如球类运动、田赛、径赛等；
      （4）K=8时为4级，表示气象条件好，适宜户外体育运动，如球类运动、田赛、径赛、射击等；
      （5）K=16时为5级，表示气象条件非常好，为最佳户外体育运动时期，适宜各种户外体育运动。
      */
+
     switch ([xbody getSportLevel]) {
         case 1:
-            [sportIndex setText:@"当前气象条件很差，不适宜户外体育运动，可适当进行户内体育运动，如篮球、网球、乒乓球等"];
+//            [sportIndex setText:@"当前气象条件很差，不适宜户外体育运动，可适当进行户内体育运动，如篮球、网球、乒乓球等"];
+            [sportIndex setText:localizedString.DQQXTJHC];
             break;
         case 2:
-            [sportIndex setText:@"当前气象条件较差，不太适宜户外体育运动，可进行户内体育运动，如篮球、网球、乒乓球等"];
+//            [sportIndex setText:@"当前气象条件较差，不太适宜户外体育运动，可进行户内体育运动，如篮球、网球、乒乓球等"];
+            [sportIndex setText:localizedString.DQQXTJJC];
             break;
         case 3:
-            [sportIndex setText:@"当前气象条件一般，比较适宜户外体育运动，可增加户外体育运动，如球类运动、田赛、径赛等"];
+//            [sportIndex setText:@"当前气象条件一般，比较适宜户外体育运动，可增加户外体育运动，如球类运动、田赛、径赛等"];
+            [sportIndex setText:localizedString.DQQXTJYB];
             break;
         case 4:
-            [sportIndex setText:@"当前气象条件好，适宜户外体育运动，如球类运动、田赛、径赛、射击等"];
+//            [sportIndex setText:@"当前气象条件好，适宜户外体育运动，如球类运动、田赛、径赛、射击等"];
+               [sportIndex setText:localizedString.DQQXTJH];
             break;
         case 5:
-            [sportIndex setText:@"当前气象条件非常好，为最佳户外体育运动时期，适宜各种户外体育运动"];
+//            [sportIndex setText:@"当前气象条件非常好，为最佳户外体育运动时期，适宜各种户外体育运动"];
+               [sportIndex setText:localizedString.DQQXTJFCH];
             break;
         default:
             break;
+            
+            
     }
+    
+    
+    
+    
+
+    
+    
+    
     
    }
 @end

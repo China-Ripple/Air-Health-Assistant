@@ -96,10 +96,15 @@
 //分页栏选择背景
 #define TABBAR_SELECTION_IMAGE      @"tabbar_selected.png"
 //文字建议
-#define TEXT_SUGGESTION1            @"当前空气质量良好"
-#define TEXT_SUGGESTION2            @"当前空气有轻微污染"
-#define TEXT_SUGGESTION3            @"当前空气污染较重"
-#define TEXT_SUGGESTION4            @"当前空气质量很差，请注意安全"
+//#define TEXT_SUGGESTION1            @"当前空气质量良好"
+//
+//
+//
+//
+//
+//#define TEXT_SUGGESTION2            @"当前空气有轻微污染"
+//#define TEXT_SUGGESTION3            @"当前空气污染较重"
+//#define TEXT_SUGGESTION4            @"当前空气质量很差，请注意安全"
 
 //-------------------------------------------------屏幕自适应相关---------------------------------------------------
 #define IPHONE4_MAIN_Y              64

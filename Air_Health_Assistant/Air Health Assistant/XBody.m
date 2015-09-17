@@ -99,6 +99,12 @@
 
 @synthesize cities;
 
+
+    
+
+
+
+
 +(XBody *)getInstance
 {
     static XBody *instance;
@@ -770,6 +776,9 @@ NSString *IMAGE_URL;
             [mainVC.dustButton.smallImage setImage:[UIImage imageNamed:@"dust_icon3.png"]];
             break;
     }
+ 
+    
+   
 }
 -(void)updatePM25Detail
 {

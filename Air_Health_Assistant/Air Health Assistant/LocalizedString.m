@@ -112,6 +112,52 @@
 
 
 
+
+@synthesize DQQXTJHC;
+@synthesize DQQXTJJC;
+@synthesize DQQXTJYB;
+@synthesize DQQXTJH;
+@synthesize DQQXTJFCH;
+@synthesize DQKQZLLH;
+@synthesize CYZS;
+@synthesize LYZS;
+@synthesize YDZS;
+@synthesize GMZS;
+@synthesize ZKQWRZTX;
+@synthesize KNDJY;
+@synthesize XJZZ;
+@synthesize XJCZ;
+@synthesize CQGDZ;
+@synthesize CQGDC;
+@synthesize CQCZ;
+@synthesize CQCC;
+@synthesize CHUNQIUZHUOZ;
+@synthesize DJCZ;
+
+@synthesize TEXT_SUGGESTION1;
+@synthesize TEXT_SUGGESTION2;
+@synthesize TEXT_SUGGESTION3;
+@synthesize TEXT_SUGGESTION4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+@synthesize YGRQ;
+@synthesize ERLNR;
+
+
+
+
+
 +(LocalizedString*)getInstance{
     static LocalizedString *localizedString = nil;
     if (localizedString == nil) {
@@ -242,6 +288,75 @@
     IMPROVE_PROPOSE = NSLocalizedStringFromTable(@"IMPROVE_PROPOSE",@"Localization",nil);
     PRESENT_AIR_QUALITY_WELL = NSLocalizedStringFromTable(@"PRESENT_AIR_QUALITY_WELL",@"Localization",nil);
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    DQQXTJHC = NSLocalizedStringFromTable(@"DQQXTJHC",@"Localization",nil);
+    
+    DQQXTJJC = NSLocalizedStringFromTable(@"DQQXTJJC",@"Localization",nil);
+    
+    DQQXTJYB = NSLocalizedStringFromTable(@"DQQXTJYB",@"Localization",nil);
+    
+    DQQXTJH = NSLocalizedStringFromTable(@"DQQXTJH",@"Localization",nil);
+    
+    DQQXTJFCH = NSLocalizedStringFromTable(@"DQQXTJFCH",@"Localization",nil);
+    
+    DQKQZLLH =  NSLocalizedStringFromTable(@"DQKQZLLH",@"Localization",nil);
+    
+    CYZS =  NSLocalizedStringFromTable(@"CYZS",@"Localization",nil);
+    
+    LYZS = NSLocalizedStringFromTable(@"LYZS",@"Localization",nil);
+    
+    YDZS = NSLocalizedStringFromTable(@"YDZS",@"Localization",nil);
+    
+    GMZS = NSLocalizedStringFromTable(@"GMZS",@"Localization",nil);
+    
+    ZKQWRZTX =  NSLocalizedStringFromTable(@"ZKQWRZTX",@"Localization",nil);
+    
+    KNDJY =  NSLocalizedStringFromTable(@"KNDJY",@"Localization",nil);
+
+    XJZZ =  NSLocalizedStringFromTable(@"XJZZ",@"Localization",nil);
+    
+    XJCZ =  NSLocalizedStringFromTable(@"XJCZ",@"Localization",nil);
+    
+    CQGDZ = NSLocalizedStringFromTable(@"CQGDZ",@"Localization",nil);
+    
+    CQGDC = NSLocalizedStringFromTable(@"CQGDC",@"Localization",nil);
+    
+    CQCZ = NSLocalizedStringFromTable(@"CQCZ",@"Localization",nil);
+    
+    CQCC =  NSLocalizedStringFromTable(@"CQCC",@"Localization",nil);
+    
+    CHUNQIUZHUOZ =  NSLocalizedStringFromTable(@"CHUNQIUZHUOZ",@"Localization",nil);
+    
+    DJCZ =  NSLocalizedStringFromTable(@"DJCZ",@"Localization",nil);
+    
+    
+    
+    TEXT_SUGGESTION1 = NSLocalizedStringFromTable(@"TEXT_SUGGESTION1",@"Localization",nil);
+    TEXT_SUGGESTION2 = NSLocalizedStringFromTable(@"TEXT_SUGGESTION2",@"Localization",nil);
+    TEXT_SUGGESTION3 = NSLocalizedStringFromTable(@"TEXT_SUGGESTION3",@"Localization",nil);
+    TEXT_SUGGESTION4 = NSLocalizedStringFromTable(@"TEXT_SUGGESTION4",@"Localization",nil);
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    YGRQ =  NSLocalizedStringFromTable(@"YGRQ",@"Localization",nil);
+    ERLNR =  NSLocalizedStringFromTable(@"ERLNR",@"Localization",nil);
+
    
 
 }

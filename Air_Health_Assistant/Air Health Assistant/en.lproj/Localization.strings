@@ -114,6 +114,67 @@
 "PRESENT_AIR_QUALITY_WELL"="Present Air Quality Well";
 
 
+"DQQXTJHC"="The current weather condition is very poor, not suitable for outdoor Sports, can be  appropriately for indoor sports, such as basketball, tennis, table tennis, etc";
 
+"DQQXTJJC" = "The current weather condition is bad, not suitable for outdoor sports, can undertake indoor sports, like basketball, tennis, table tennis, etc";
+
+"DQQXTJYB"="The current weather condition is so-so, more suitable for outdoor sports, can increase outdoor sports, such as ball games, field and track, etc";
+
+"DQQXTJH"="The current weather condition is good, suitable for outdoor sports, such as ball games, such as field, track and shooting";
+
+
+"DQQXTJFCH"="The current weather condition is very good, it is the best period for outdoor sports, suitable for all kinds Of outdoor sports";
+
+"DQKQZLLH"="The current air quality is good";
+
+"CYZS"="Dressing index: comfortable, it is recommended to wear long sleeve T-shirt, shirt and trousers, etc. Frail elderly should wear A knit long-sleeve shirt, vest and trousers.";
+
+"LYZS"="Tourism index: suitable, the weather is good, but won't affect the mood of your travel. Temperature is comfortable, also accompanied by breeze, suitable for travel";
+
+
+"YDZS"="Exercise index: ok for outdoors activities, easy sensitive people should be out less";
+
+"GMZS"="Cold index: meteorological department forecasts the influence of meteorological conditions on the people in a cold, considering the meteorological factors such as temperature, humidity, wind speed, weather phenomena, temperature daily range, to determine the risk of colds, etc.";
+
+"ZKQWRZTX"="In the condition of air pollution, there are two ways to keep indoor air fresh: one is outdoor air ventilation, the second is to filter the indoor polluted air by filtering unit. If using the second Method To make indoor air fresh, it can deodorize through filter, but it can't filter the hydrogen in the air. It is suggested to use the first method if environment allows.";
+
+
+"KNDJY"="Possible suggested dressing index: Cool and comfortable, spring and autumn transitional dressing: knit long-sleeve shirt + vest, pants, thin suits, cowboy shirt, trousers. For frail elderly, the spring and autumn outfit: a thin sweater + lined clothes or suit";
+
+"XJZZ"="Summer dressing: blouse, skirts, shorts, thin T-shirts, open-necked cotton shirts with short sleeves";
+"XJCZ"="Summer dressing: skirt, shorts, short suits, T-shirts. For frail elderly: single layer thin shirt and trousers, thin cotton shirt";
+
+
+"CQGDZ"="Spring and autumn transitional dressing: single layer thin shirt and trousers, thin cotton shirt. For frail elderly: knit long-sleeve shirt + vest, trousers, thin suit";
+
+
+"CQGDC"="Spring and autumn transitional dressing: knit long-sleeve shirt + vest, pants, thin suits, cowboy shirt, trousers. For frail elderly, the spring and autumn outfit: a thin sweater + lined clothes or suit";
+
+
+"CQCZ"="Spring and autumn outfit: a cardigan, suits, jackets, suits, vest shirt + jacket with trousers. For frail elderly: a thick weater + lined clothes or trench coat";
+
+"CQCC"="Spring and autumn outfit: weaters, windbreaker, fur suit, suit. For frail elderly: one to two cardigan + coat or a fur suit";
+
+
+"CHUNQIUZHUOZ"="Spring and autumn outfit: one to two sweater, coat, fur suits, leather jackets. For frail elderly, winter clothes:  cotton-padded clothes, winter coats, leather jackets, a shirt inside or woollen underwear + sweater and coat";
+
+
+"DJCZ"="Winter clothes: cotton-padded clothes, winter coats, leather jackets, a shirt inside or woollen underwear + sweater and coat. Frail elderly should go out less as far as possible.";
+
+"TEXT_SUGGESTION1" = "dang qian kong qi zhi liang liang hao";
+"TEXT_SUGGESTION2" = "you qing wei wu ran";
+"TEXT_SUGGESTION3" = "wu ran jiao zhong";
+"TEXT_SUGGESTION4" = "zu yi an quan";
+
+
+
+
+
+
+
+
+
+"YGRQ"="yi gan ren qun zheng zhuang you qing du jia ju,jian kang ren qun chu xian ci ji zheng zhuang";
+"ERLNR"="er tong、lao nian ren ji xin zang bing、hu xi xi tong ji bing huan zhe ying jian shao chang shi jian、gao qiang du de hu wai duan lian";
 
 
