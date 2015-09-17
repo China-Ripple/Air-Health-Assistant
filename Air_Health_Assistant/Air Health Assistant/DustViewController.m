@@ -182,7 +182,7 @@
     //文字建议
     switch (xbody.airQualityDetector) {
         case 0:
-            [dustSuggestContent setText:localizedString.ZKQWRZTX];
+            [dustSuggestContent setText:localizedString.TEXT_SUGGESTION1];
             break;
         case 1:
             [dustSuggestContent setText:localizedString.TEXT_SUGGESTION2];

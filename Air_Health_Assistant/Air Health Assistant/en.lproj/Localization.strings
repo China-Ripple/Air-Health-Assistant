@@ -161,10 +161,10 @@
 
 "DJCZ"="Winter clothes: cotton-padded clothes, winter coats, leather jackets, a shirt inside or woollen underwear + sweater and coat. Frail elderly should go out less as far as possible.";
 
-"TEXT_SUGGESTION1" = "dang qian kong qi zhi liang liang hao";
-"TEXT_SUGGESTION2" = "you qing wei wu ran";
-"TEXT_SUGGESTION3" = "wu ran jiao zhong";
-"TEXT_SUGGESTION4" = "zu yi an quan";
+"TEXT_SUGGESTION1" = " Current Air Quality: Good ";
+"TEXT_SUGGESTION2" = " Current Air Quality: Slightly Polluted";
+"TEXT_SUGGESTION3" = " Current Air Quality: Severely polluted";
+"TEXT_SUGGESTION4" = " Current Air Quality: Caution! Bad air quality";
 
 
 

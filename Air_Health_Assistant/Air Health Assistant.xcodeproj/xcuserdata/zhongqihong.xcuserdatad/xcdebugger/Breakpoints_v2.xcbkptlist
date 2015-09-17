@@ -381,7 +381,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
             endingLineNumber = "106"
-            landmarkName = "-refreshData"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -461,7 +461,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "569"
             endingLineNumber = "569"
-            landmarkName = "-downloadImage"
+            landmarkName = "-updatePM25"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
