@@ -95,6 +95,7 @@
     [dustSuggestTitle setText:localizedString.IMPROVE_PROPOSE];
     //建议内容
     [dustSuggestContent setFont:xbody.textFont];
+   
     //烟气检测
     [dustTitle setFont:xbody.titleFont];
     [dustTitle setText:localizedString.FLUE_EXAMINE];
@@ -103,10 +104,10 @@
     [dustDataTextLabel setFont:xbody.titleFont];
     [dustDataTextLabel setText:localizedString.AIR_CLEAN];
    
+//    PRESENT_AIR_QUALITY_WELL
+//    
     
-    
-    
-    
+
   
     
     
@@ -181,19 +182,20 @@
     //文字建议
     switch (xbody.airQualityDetector) {
         case 0:
-            [dustSuggestContent setText:TEXT_SUGGESTION1];
+            [dustSuggestContent setText:localizedString.ZKQWRZTX];
             break;
         case 1:
-            [dustSuggestContent setText:TEXT_SUGGESTION2];
+            [dustSuggestContent setText:localizedString.TEXT_SUGGESTION2];
             break;
         case 2:
-            [dustSuggestContent setText:TEXT_SUGGESTION3];
+            [dustSuggestContent setText:localizedString.TEXT_SUGGESTION3];
             break;
         case 3:
-            [dustSuggestContent setText:TEXT_SUGGESTION4];
+            [dustSuggestContent setText:localizedString.TEXT_SUGGESTION4];
             break;
         default:
-            [dustSuggestContent setText:@"在空气污染状态下，使室内空气清新有两种方法：一是室外的空气通风，第二种是把室内污浊的空气通过过滤装置进行过滤。如果采用第二种方法使室内空气清新，虽然能通过过滤器进行脱臭，但不能过滤空气中但氢气。建议在环境允许的情况下采用第一种方法。"];
+//            [dustSuggestContent setText:@"在空气污染状态下，使室内空气清新有两种方法：一是室外的空气通风，第二种是把室内污浊的空气通过过滤装置进行过滤。如果采用第二种方法使室内空气清新，虽然能通过过滤器进行脱臭，但不能过滤空气中但氢气。建议在环境允许的情况下采用第一种方法。"];
+              [dustSuggestContent setText:localizedString.ZKQWRZTX];
             break;
     }
 }

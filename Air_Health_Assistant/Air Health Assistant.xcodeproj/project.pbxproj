@@ -1836,7 +1836,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air Health Assistant/Air Health Assistant-Prefix.pch";
 				INFOPLIST_FILE = "Air Health Assistant/Air Health Assistant-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",
@@ -1963,7 +1963,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air Health Assistant/Air Health Assistant-Prefix.pch";
 				INFOPLIST_FILE = "Air Health Assistant/Air Health Assistant-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",
@@ -1986,7 +1986,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air Health Assistant/Air Health Assistant-Prefix.pch";
 				INFOPLIST_FILE = "Air Health Assistant/Air Health Assistant-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/xuda/Desktop/workspace/Air\\ Health\\ Assistant/Air\\ Health\\ Assistant",

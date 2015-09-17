@@ -359,7 +359,7 @@
     //pm2.5指示颜色对应
     //colorBarTitle;
     //pm2.5影响
-    [affect setText:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_AFFECT]];
+//    [affect setText:[xbody.pm25CurrentCityDataDic objectForKey:PM_DATA_AFFECT]];
     //pm2.5空气质量详细参数
     //dataDetailTitle;
 }

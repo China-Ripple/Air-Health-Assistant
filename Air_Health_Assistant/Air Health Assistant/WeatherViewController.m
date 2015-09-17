@@ -69,7 +69,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-  
+    
     LocalizedString *localizedString = [LocalizedString getInstance];
     
     
@@ -85,14 +85,14 @@
     
     //天气数值
     [weatherValue setFont:xbody.bigTextFont];
-   
+    
     
     //天气单位
     
     [weatherUnit setFont:xbody.midTextFont];
-
+    
     int lan = [xbody getCurrentLanguage];
-   
+    
     if(lan == 1){
         [weatherUnit setText:@"℉"];
     }
@@ -100,9 +100,9 @@
         [weatherUnit setText:@"℃"];
     }
     
-   
-   
- 
+    
+    
+    
     
     //城市
     [cityLabel setFont:xbody.smallFont];
@@ -136,7 +136,7 @@
     [weatherSDContent setFont:xbody.textFont];
     //天气情况建议
     [weatherSuggestTitle setFont:xbody.titleFont];
-       [weatherSuggestTitle setText:localizedString.SUGGESTION];
+    [weatherSuggestTitle setText:localizedString.SUGGESTION];
     //穿衣指数
     [weatherSuggestContent setFont:xbody.textFont];
 }
@@ -170,17 +170,17 @@
         [self.frameView setFrame:CGRectMake(IPAD_DETAIL_X,IPAD_DETAIL_Y,IPAD_DETAIL_WIDTH,IPAD_DETAIL_HEIGHT)];
     }
     [[self.tabBarController tabBar] setHidden:YES];
-
+    
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
     //[[NSNotificationCenter defaultCenter] removeObserver:self name: WeatherDataReceivedNotification object:nil];
 }
 /*
--(void)_sessionDataReceived:(id)sender
-{
-    [self refreshData];
-}*/
+ -(void)_sessionDataReceived:(id)sender
+ {
+ [self refreshData];
+ }*/
 
 UIImageView *imageView;
 NSString *IMAGE_URL;
@@ -247,7 +247,7 @@ NSString *IMAGE_URL;
         }
     }
     
-
+    
     //------------------------------------------------------------------------------------------------------------
     NSLog(@"%@",[weather objectForKey:WEATHER_IMG1]);
     //[cityLabel setText:city];
@@ -261,7 +261,7 @@ NSString *IMAGE_URL;
     NSString* theCityStr = [xbody checkNull:xbody.currentCity];
     NSString* theProvinceStr = [xbody checkNull:xbody.currentProvince];
     LocalizedString * localizedString = [LocalizedString getInstance];
-
+    
     if ([theProvinceStr isEqualToString: theCityStr]) {
         [cityLabel setText:[NSString stringWithFormat:@"%@ %@%@",date2,localizedString.T_CURRENT_CITY,theCityStr]];
     }else{
@@ -274,53 +274,62 @@ NSString *IMAGE_URL;
     [weatherTempHighContent setText:temp1];
     [weatherTempLowContent setText:temp2];
     [weatherDataTextLabel setText:weatherStr];
-    if(lan == 1){
-         [weatherSuggestContent setText:@"Keep healthy"];
+    //    if(lan == 1){
+    //         [weatherSuggestContent setText:@"Keep healthy"];
+    //    }
+    //    else{
+    //穿衣指数
+    switch ([xbody getDressingIndex]) {
+        case 1:
+            //                [weatherSuggestContent setText:@"夏季着装：短衫、短裙、短裤、薄型T恤衫、敞领短袖棉衫"];
+            [weatherSuggestContent setText:localizedString.XJZZ];
+            break;
+        case 2:
+            //                [weatherSuggestContent setText:@"夏季着装：短裙、短裤、短套装、T 恤,年老体弱者：单层薄衫裤、薄型棉衫"];
+            [weatherSuggestContent setText:localizedString.XJCZ];
+            break;
+        case 3:
+            //                [weatherSuggestContent setText:@"春秋过渡装：单层薄衫裤、薄型棉杉,年老体弱者：针织长袖衬衫+背心、长裤、薄型套装"];
+            [weatherSuggestContent setText:localizedString.CQGDZ];
+            break;
+        case 4:
+            //                [weatherSuggestContent setText:@"春秋过渡装：针织长袖衬衫+背心、长裤、薄型套装、牛仔衫裤,年老体弱者，春秋着装：一件薄羊毛衫+夹衣或西服套装"];
+            [weatherSuggestContent setText:localizedString.CQGDC];
+            break;
+        case 5:
+            //                [weatherSuggestContent setText:@"春秋着装：一件羊毛衫、套装、夹克衫、西服套装、马甲衬衫+夹克衫配长裤,年老体弱者：一件厚羊毛衫+夹衣或风衣"];
+            [weatherSuggestContent setText:localizedString.CQCZ];
+            break;
+        case 6:
+            //                [weatherSuggestContent setText:@"春秋着装：毛衣、风衣、毛套装、西服套装。年老体弱者：一到两件羊毛衫+大衣或毛套装"];
+            [weatherSuggestContent setText:localizedString.CQCC];
+            
+            break;
+        case 7:
+            //                [weatherSuggestContent setText:@"春秋着装：一到两件羊毛衫、大衣、毛套装、皮夹克，年老体弱者，冬季着装：棉衣、冬大衣、皮夹克、内着衬衫或羊毛内衣+毛衣再外罩大衣"];
+            [weatherSuggestContent setText:localizedString.CHUNQIUZHUOZ];
+            break;
+        case 8:
+            //                [weatherSuggestContent setText:@"冬季着装：棉衣、冬大衣、皮夹克、内着衬衫或羊毛内衣+毛衣再外罩大衣, 年老体弱者尽量少外出"];
+            [weatherSuggestContent setText:localizedString.DJCZ];
+            break;
+        default:
+//            [weatherSuggestContent setText:@""];
+            break;
     }
-    else{
-        //穿衣指数
-        switch ([xbody getDressingIndex]) {
-            case 1:
-                [weatherSuggestContent setText:@"夏季着装：短衫、短裙、短裤、薄型T恤衫、敞领短袖棉衫"];
-                break;
-            case 2:
-                [weatherSuggestContent setText:@"夏季着装：短裙、短裤、短套装、T 恤,年老体弱者：单层薄衫裤、薄型棉衫"];
-                break;
-            case 3:
-                [weatherSuggestContent setText:@"春秋过渡装：单层薄衫裤、薄型棉杉,年老体弱者：针织长袖衬衫+背心、长裤、薄型套装"];
-                break;
-            case 4:
-                [weatherSuggestContent setText:@"春秋过渡装：针织长袖衬衫+背心、长裤、薄型套装、牛仔衫裤,年老体弱者，春秋着装：一件薄羊毛衫+夹衣或西服套装"];
-                break;
-            case 5:
-                [weatherSuggestContent setText:@"春秋着装：一件羊毛衫、套装、夹克衫、西服套装、马甲衬衫+夹克衫配长裤,年老体弱者：一件厚羊毛衫+夹衣或风衣"];
-                break;
-            case 6:
-                [weatherSuggestContent setText:@"春秋着装：毛衣、风衣、毛套装、西服套装。年老体弱者：一到两件羊毛衫+大衣或毛套装"];
-                break;
-            case 7:
-                [weatherSuggestContent setText:@"春秋着装：一到两件羊毛衫、大衣、毛套装、皮夹克，年老体弱者，冬季着装：棉衣、冬大衣、皮夹克、内着衬衫或羊毛内衣+毛衣再外罩大衣"];
-                break;
-            case 8:
-                [weatherSuggestContent setText:@"冬季着装：棉衣、冬大衣、皮夹克、内着衬衫或羊毛内衣+毛衣再外罩大衣, 年老体弱者尽量少外出"];
-                break;
-            default:
-                [weatherSuggestContent setText:@""];
-                break;
-        }
-
-    }
-       if (temp == nil || [temp length] == 0) {
-        [weatherSuggestContent setText:@""];
-    }
+    
 }
--(void)viewDidAppear:(BOOL)animated
-{
-}
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//       if (temp == nil || [temp length] == 0) {
+//        [weatherSuggestContent setText:@""];
+//    }
+//}
+//-(void)viewDidAppear:(BOOL)animated
+//{
+//}
+//- (void)didReceiveMemoryWarning
+//{
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
 
 @end
